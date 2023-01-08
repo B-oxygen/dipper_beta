@@ -1,0 +1,123 @@
+.character1Icon,
+.logoMainIcon,
+.universeMainIcon {
+  position: absolute;
+  object-fit: cover;
+}
+.universeMainIcon {
+  top: 0;
+  left: 0;
+  width: 1046px;
+  height: 1119px;
+}
+.logoMainIcon {
+  top: 433px;
+  left: 32px;
+  width: 478px;
+  height: 189px;
+}
+.character1Icon {
+  top: 209px;
+  left: 560px;
+  width: 743px;
+  height: 772px;
+  cursor: pointer;
+}
+.about {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 3px;
+  font-size: var(--font-size-base);
+  font-family: var(--font-inder);
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
+}
+.faq {
+  right: 156px;
+}
+.faq,
+.gallery,
+.mint,
+.roadmap {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 3px;
+  font-size: var(--font-size-base);
+  font-family: var(--font-inder);
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
+}
+.roadmap {
+  right: 241px;
+}
+.gallery {
+  right: 379px;
+}
+.mint {
+  right: 505px;
+}
+.about {
+  right: 595px;
+}
+.iconDiscord,
+.iconTwitter {
+  text-decoration: none;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  cursor: pointer;
+}
+.iconTwitter {
+  top: 2px;
+  right: 0;
+  width: 38px;
+  height: 38px;
+  background-image: url(../../public/icon-twitter@3x.png);
+}
+.iconDiscord {
+  top: 0;
+  right: 68px;
+  width: 42px;
+  height: 40px;
+  background-image: url(../../public/icon-discord@3x.png);
+}
+.iconLogo,
+.navbar {
+  position: absolute;
+  height: 50px;
+}
+.iconLogo {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  width: 60px;
+  background-image: url(../../public/d1@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.navbar {
+  top: 35px;
+  right: 43px;
+  width: 1365px;
+}
+.main {
+  position: relative;
+  background-color: rgba(124, 153, 255, 0.85);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+}

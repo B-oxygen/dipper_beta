@@ -1,0 +1,275 @@
+.universeMintIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1046px;
+  height: 1119px;
+  object-fit: cover;
+}
+.coinbasewalletChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-sm);
+  background-color: var(--color-gray-100);
+  box-shadow: 9px 9px 4px rgba(0, 0, 0, 0.25);
+  width: 690px;
+  height: 111px;
+  cursor: pointer;
+}
+.coinbaseWallet {
+  position: absolute;
+  top: 16px;
+  left: 29px;
+  font-size: var(--font-size-3xl);
+  letter-spacing: 0.31em;
+  line-height: 250%;
+  font-family: var(--font-inder);
+  color: var(--color-black);
+  text-align: center;
+  display: inline-block;
+  width: 698px;
+  height: 81px;
+}
+.coinbase1Icon {
+  position: absolute;
+  top: 18px;
+  left: 19px;
+  width: 77px;
+  height: 77px;
+  object-fit: cover;
+}
+.coinbasewallet {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 641px;
+  left: 356px;
+  width: 727px;
+  height: 111px;
+}
+.kaiKas {
+  position: absolute;
+  top: 19px;
+  left: 58px;
+  font-size: var(--font-size-3xl);
+  letter-spacing: 0.31em;
+  line-height: 250%;
+  font-family: var(--font-inder);
+  color: var(--color-black);
+  text-align: center;
+  display: inline-block;
+  width: 640px;
+  height: 80px;
+}
+.walletconnectLogoIcon {
+  position: absolute;
+  top: 18px;
+  left: 19px;
+  width: 75px;
+  height: 76px;
+  object-fit: cover;
+}
+.kaikas {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 513px;
+  left: 356px;
+  width: 698px;
+  height: 111px;
+}
+.metaMask {
+  position: absolute;
+  top: 15px;
+  left: 89px;
+  font-size: var(--font-size-3xl);
+  letter-spacing: 0.42em;
+  line-height: 250%;
+  font-family: var(--font-inder);
+  color: var(--color-black);
+  text-align: center;
+  display: inline-block;
+  width: 528px;
+  height: 80px;
+}
+.metamask1Icon {
+  position: absolute;
+  top: 10px;
+  left: 7px;
+  width: 101px;
+  height: 91px;
+  object-fit: cover;
+}
+.metamask {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 385px;
+  left: 356px;
+  width: 690px;
+  height: 111px;
+}
+.connectWalletChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-md);
+  background-color: var(--color-gray-300);
+  box-shadow: 9px 9px 4px rgba(0, 0, 0, 0.25);
+  width: 670px;
+  height: 105px;
+}
+.connectWallet1 {
+  position: absolute;
+  top: 31.78px;
+  left: 113px;
+  letter-spacing: 0.19em;
+  display: inline-block;
+  width: 494px;
+  height: 20.24px;
+}
+.connectWallet {
+  position: absolute;
+  top: 241px;
+  left: 376px;
+  width: 670px;
+  height: 105px;
+}
+.about {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 3px;
+  font-size: var(--font-size-base);
+  font-family: var(--font-inder);
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
+}
+.faq {
+  right: 156px;
+}
+.faq,
+.gallery,
+.mint,
+.roadmap {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 3px;
+  font-size: var(--font-size-base);
+  font-family: var(--font-inder);
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
+}
+.roadmap {
+  right: 241px;
+}
+.gallery {
+  right: 379px;
+}
+.mint {
+  right: 505px;
+}
+.about {
+  right: 595px;
+}
+.iconDiscord,
+.iconTwitter {
+  text-decoration: none;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  cursor: pointer;
+}
+.iconTwitter {
+  top: 2px;
+  right: 0;
+  width: 38px;
+  height: 38px;
+  background-image: url(../../public/icon-twitter@3x.png);
+}
+.iconDiscord {
+  top: 0;
+  right: 68px;
+  width: 42px;
+  height: 40px;
+  background-image: url(../../public/icon-discord@3x.png);
+}
+.iconLogo,
+.navbar {
+  position: absolute;
+  height: 50px;
+}
+.iconLogo {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  width: 60px;
+  background-image: url(../../public/d1@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.navbar {
+  top: 35px;
+  right: 43px;
+  width: 1365px;
+}
+.mintConnectWallet {
+  position: relative;
+  background-color: var(--color-violet-100);
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 40px;
+  color: var(--color-white);
+  font-family: var(--font-hubballi);
+}
+.nametagwt1Icon {
+  position: absolute;
+  top: 63px;
+  left: 0;
+  width: 195px;
+  height: 16px;
+  object-fit: cover;
+}
+.next {
+  position: absolute;
+  top: 0;
+  left: 32px;
+  font-size: var(--font-size-4xl);
+  letter-spacing: 0.23em;
+  line-height: 250%;
+  font-family: var(--font-inder);
+  color: var(--color-white);
+  text-align: left;
+}
+.buttonNext {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 885px;
+  left: 802px;
+  width: 195px;
+  height: 88px;
+}

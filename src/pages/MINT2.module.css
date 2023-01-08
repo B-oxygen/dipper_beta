@@ -1,0 +1,508 @@
+.backgroundcolorChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-md);
+  background-color: var(--color-violet-200);
+  box-shadow: 9px 9px 4px rgba(0, 0, 0, 0.25);
+  width: 364px;
+  height: 298px;
+}
+.nametagw7Icon {
+  position: absolute;
+  top: 40px;
+  left: 19px;
+  width: 326px;
+  height: 26px;
+  object-fit: cover;
+}
+.background,
+.reactColor {
+  position: absolute;
+  top: 17px;
+  left: 93px;
+}
+.reactColor {
+  top: 70px;
+  left: 88px;
+  border-radius: var(--br-lg);
+  background-color: #ffdb6d;
+  width: 195px;
+  height: 195px;
+}
+.backgroundcolorInner,
+.backgroundcolorItem {
+  position: absolute;
+  width: 16.5px;
+  height: 38.11px;
+  cursor: pointer;
+}
+.backgroundcolorItem {
+  top: 147.95px;
+  left: 312.5px;
+}
+.backgroundcolorInner {
+  top: 148.95px;
+  left: 24px;
+}
+.backgroundcolor,
+.skinChild {
+  position: absolute;
+  top: 659px;
+  left: 445px;
+  width: 364px;
+  height: 298px;
+}
+.skinChild {
+  top: 0;
+  left: 0;
+  border-radius: var(--br-md);
+  background-color: var(--color-violet-200);
+  box-shadow: 9px 9px 4px rgba(0, 0, 0, 0.25);
+  height: 142px;
+}
+.skin1 {
+  position: absolute;
+  top: 16px;
+  left: 158px;
+}
+.ellipseIcon,
+.skinInner,
+.skinItem {
+  position: absolute;
+  top: 66px;
+  width: 53px;
+  height: 53px;
+  cursor: pointer;
+}
+.skinItem {
+  left: 61px;
+}
+.skinInner {
+  left: 155px;
+}
+.ellipseIcon {
+  left: 249px;
+}
+.eyesChild,
+.skin {
+  position: absolute;
+  width: 364px;
+}
+.skin {
+  top: 496px;
+  left: 445px;
+  height: 142px;
+}
+.eyesChild {
+  top: 0;
+  left: 0;
+  border-radius: var(--br-md);
+  background-color: var(--color-violet-200);
+  box-shadow: 9px 9px 4px rgba(0, 0, 0, 0.25);
+  height: 160px;
+}
+.nametagw5Icon {
+  position: absolute;
+  top: 41px;
+  left: 19px;
+  width: 326px;
+  height: 26px;
+  object-fit: cover;
+}
+.eyes1,
+.eyesItem {
+  position: absolute;
+  top: 18px;
+  left: 155px;
+}
+.eyesItem {
+  top: 76px;
+  left: 76px;
+  border-radius: var(--br-xl);
+  background-color: var(--color-gray-200);
+  width: 211px;
+  height: 60px;
+}
+.eyesInner,
+.polygonIcon {
+  position: absolute;
+  top: 100.94px;
+  left: 31px;
+  width: 16.5px;
+  height: 12.12px;
+  cursor: pointer;
+}
+.polygonIcon {
+  left: 315.5px;
+}
+.icon {
+  position: absolute;
+  top: 62px;
+  left: 92px;
+  width: 180px;
+  height: 75px;
+  object-fit: cover;
+}
+.eyes,
+.nametagw4Icon {
+  position: absolute;
+  top: 315px;
+  left: 445px;
+  width: 364px;
+  height: 160px;
+}
+.nametagw4Icon {
+  top: 45px;
+  left: 19px;
+  width: 326px;
+  height: 26px;
+  object-fit: cover;
+}
+.brows,
+.eyebrowsItem {
+  position: absolute;
+  top: 22px;
+  left: 135px;
+}
+.eyebrowsItem {
+  top: 81px;
+  left: 76px;
+  border-radius: var(--br-xl);
+  width: 211px;
+  height: 60px;
+  object-fit: cover;
+}
+.eyebrowsChild1,
+.eyebrowsInner {
+  position: absolute;
+  top: 104.94px;
+  width: 16.5px;
+  height: 12.12px;
+  cursor: pointer;
+}
+.eyebrowsInner {
+  left: 315.5px;
+}
+.eyebrowsChild1 {
+  left: 31px;
+}
+.icon1 {
+  position: absolute;
+  top: 66px;
+  left: 71px;
+  width: 234px;
+  height: 94px;
+  object-fit: cover;
+}
+.clothesChild,
+.eyebrows {
+  position: absolute;
+  width: 364px;
+}
+.eyebrows {
+  top: 134px;
+  left: 445px;
+  height: 160px;
+}
+.clothesChild {
+  bottom: 0;
+  left: 2px;
+  border-radius: var(--br-md);
+  background-color: var(--color-violet-200);
+  box-shadow: 9px 9px 4px rgba(0, 0, 0, 0.25);
+  height: 368px;
+}
+.clothesItem {
+  position: absolute;
+  bottom: 69px;
+  left: 21px;
+  border-radius: var(--br-sm);
+  background-color: var(--color-gray-200);
+  width: 326px;
+  height: 231px;
+}
+.clothes1 {
+  position: absolute;
+  bottom: 327px;
+  left: 125px;
+  display: inline-block;
+  width: 118px;
+  height: 26px;
+}
+.icon2,
+.nametagw6Icon {
+  position: absolute;
+  top: 82px;
+  left: 0;
+  width: 368px;
+  height: 191px;
+  object-fit: cover;
+}
+.nametagw6Icon {
+  top: 38px;
+  left: 21px;
+  width: 326px;
+  height: 26px;
+}
+.clothesChild1,
+.clothesChild2,
+.clothesInner {
+  position: absolute;
+  top: 317px;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+.clothesInner {
+  left: 107px;
+}
+.clothesChild1 {
+  left: 166px;
+}
+.clothesChild2 {
+  left: 225px;
+}
+.clothes {
+  position: absolute;
+  bottom: 67px;
+  left: 54px;
+  width: 368px;
+  height: 368px;
+}
+.hairChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-md);
+  background-color: var(--color-violet-200);
+  box-shadow: 9px 9px 4px rgba(0, 0, 0, 0.25);
+  width: 364px;
+  height: 439px;
+}
+.hairItem {
+  top: 81px;
+  left: 76px;
+  border-radius: 26px;
+  background-color: var(--color-gray-200);
+  width: 211px;
+  height: 276px;
+}
+.hair1,
+.hairItem,
+.icon3 {
+  position: absolute;
+}
+.icon3 {
+  top: calc(50% - 125.5px);
+  left: 99px;
+  width: 166px;
+  height: 132px;
+  object-fit: cover;
+}
+.hair1 {
+  top: 19px;
+  left: 151px;
+}
+.hairChild1,
+.hairInner {
+  position: absolute;
+  width: 16.5px;
+  height: 38.11px;
+  cursor: pointer;
+}
+.hairInner {
+  top: 206.95px;
+  left: 315.5px;
+}
+.hairChild1 {
+  top: 207.95px;
+  left: 31px;
+}
+.hairChild2 {
+  left: 105px;
+}
+.hairChild2,
+.hairChild3,
+.hairChild4 {
+  position: absolute;
+  top: 375px;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+.hairChild3 {
+  left: 164px;
+}
+.hairChild4 {
+  left: 223px;
+}
+.completed1Icon,
+.hair {
+  position: absolute;
+}
+.hair {
+  top: 134px;
+  left: 56px;
+  width: 364px;
+  height: 439px;
+}
+.completed1Icon,
+.nametagwt1Icon {
+  top: 228px;
+  left: 841px;
+  width: 574px;
+  height: 589px;
+  object-fit: cover;
+}
+.nametagwt1Icon {
+  top: 25px;
+  left: 0;
+  width: 413px;
+  height: 33px;
+}
+.nametagwt1Icon,
+.preview,
+.preview1 {
+  position: absolute;
+}
+.preview1 {
+  top: 0;
+  left: 146px;
+}
+.preview {
+  top: 135px;
+  left: 912px;
+  width: 413px;
+  height: 58px;
+  font-size: var(--font-size-3xl);
+}
+.buttonMintChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-xs);
+  background-color: var(--color-gray-300);
+  box-shadow: 9px 9px 4px rgba(0, 0, 0, 0.25);
+  width: 503px;
+  height: 108px;
+}
+.mintNow {
+  position: absolute;
+  top: 37px;
+  left: 139px;
+  font-size: 36px;
+  letter-spacing: 0.23em;
+  font-family: var(--font-hubballi);
+  color: var(--color-white);
+  text-align: left;
+}
+.about,
+.buttonMint,
+.faq,
+.gallery,
+.mint,
+.roadmap {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+}
+.buttonMint {
+  top: 827px;
+  left: 867px;
+  width: 503px;
+  height: 108px;
+}
+.about {
+  top: 3px;
+  font-size: var(--font-size-base);
+  font-family: var(--font-inder);
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
+}
+.faq {
+  right: 156px;
+}
+.faq,
+.gallery,
+.mint,
+.roadmap {
+  top: 3px;
+  font-size: var(--font-size-base);
+  font-family: var(--font-inder);
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
+}
+.roadmap {
+  right: 241px;
+}
+.gallery {
+  right: 379px;
+}
+.mint {
+  right: 505px;
+}
+.about {
+  right: 595px;
+}
+.iconDiscord,
+.iconTwitter {
+  text-decoration: none;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  cursor: pointer;
+}
+.iconTwitter {
+  top: 2px;
+  right: 0;
+  width: 38px;
+  height: 38px;
+  background-image: url(../../public/icon-twitter@3x.png);
+}
+.iconDiscord {
+  top: 0;
+  right: 68px;
+  width: 42px;
+  height: 40px;
+  background-image: url(../../public/icon-discord@3x.png);
+}
+.iconLogo,
+.navbar {
+  position: absolute;
+  height: 50px;
+}
+.iconLogo {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  width: 60px;
+  background-image: url(../../public/d1@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.navbar {
+  top: 35px;
+  right: 43px;
+  width: 1365px;
+}
+.mint2 {
+  position: relative;
+  background-color: var(--color-violet-100);
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-2xl);
+  color: var(--color-white);
+  font-family: var(--font-hubballi);
+}

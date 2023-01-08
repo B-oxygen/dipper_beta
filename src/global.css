@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Inder:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hubballi:wght@400&display=swap");
+
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --font-inder: Inder;
+  --font-hubballi: Hubballi;
+
+  /* font sizes */
+  --font-size-base: 20px;
+  --font-size-lg: 23px;
+  --font-size-xl: 24px;
+  --font-size-2xl: 30px;
+  --font-size-3xl: 32px;
+  --font-size-4xl: 35px;
+  --font-size-5xl: 45px;
+  --font-size-6xl: 58px;
+
+  /* Colors */
+  --color-violet-100: #90a8ff;
+  --color-violet-200: #717cf3;
+  --color-white: #fff;
+  --color-gray-100: #dbe3ff;
+  --color-gray-200: #4c4c4c;
+  --color-gray-300: #373737;
+  --color-black: #000;
+
+  /* border radiuses */
+  --br-xs: 19px;
+  --br-sm: 24px;
+  --br-md: 25px;
+  --br-lg: 27px;
+  --br-xl: 40px;
+}
