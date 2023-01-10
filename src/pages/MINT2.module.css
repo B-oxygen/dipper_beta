@@ -287,22 +287,13 @@
   background-color: var(--color-gray-200);
   width: 211px;
   height: 276px;
+  position: relative;
 }
-.hair1,
-.hairItem,
-.icon3 {
-  position: absolute;
-}
-.icon3 {
-  top: calc(50% - 125.5px);
-  left: 99px;
-  width: 166px;
-  height: 132px;
-  object-fit: cover;
-}
-.hair1 {
+
+.hairText {
   top: 19px;
   left: 151px;
+  position: absolute;
 }
 .hairChild1,
 .hairInner {
@@ -337,7 +328,6 @@
 .hairChild4 {
   left: 223px;
 }
-.completed1Icon,
 .hair {
   position: absolute;
 }
@@ -347,7 +337,7 @@
   width: 364px;
   height: 439px;
 }
-.completed1Icon,
+
 .nametagwt1Icon {
   top: 228px;
   left: 841px;
@@ -505,4 +495,83 @@
   font-size: var(--font-size-2xl);
   color: var(--color-white);
   font-family: var(--font-hubballi);
+}
+.swiper-slide swiper-slide-active {
+  width: 100%;
+  height: 1024px;
+}
+
+.hair1 {
+  top: 0px;
+  left: -89px;
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  position: absolute;
+}
+.hair2 {
+  top: 0px;
+  left: -88px;
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  position: absolute;
+}
+.hair3 {
+  top: 0px;
+  left: -65px;
+  width: 360px;
+  height: 270px;
+  object-fit: cover;
+  position: absolute;
+}
+.hair4 {
+  top: 0px;
+  left: -88px;
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  position: absolute;
+}
+.hair5 {
+  top: 0px;
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.backgroundColorSort,
+.skinSort,
+.outline,
+.hairSort,
+.eyesSort,
+.eyebrowsSort,
+.clothesSort {
+  top: 228px;
+  left: 841px;
+  width: 574px;
+  height: 589px;
+  object-fit: cover;
+  position: absolute;
+}
+.backgroundColorSort {
+  z-index: 1;
+}
+.skinSort {
+  z-index: 2;
+}
+.outline {
+  z-index: 2;
+}
+.eyesSort {
+  z-index: 3;
+}
+.eyebrowsSort {
+  z-index: 4;
+}
+.hairSort {
+  z-index: 6;
+}
+.clothesSort {
+  z-index: 6;
 }

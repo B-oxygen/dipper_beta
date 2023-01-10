@@ -4,13 +4,16 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
+import { useEffect } from "react";
+
 import MAIN from "./pages/MAIN";
 import MINTCONNECTWALLET from "./pages/MINTCONNECTWALLET";
 import MINT2 from "./pages/MINT2";
 import ABOUT from "./pages/ABOUT";
+import GALLERY from "./pages/Gallery";
+import MyGALLERY from "./pages/MyGALLERY";
 import CUSTOMIZNG from "./pages/CUSTOMIZNG";
 import FAQ from "./pages/FAQ";
-import { useEffect } from "react";
 
 function App() {
   const action = useNavigationType();
@@ -37,6 +40,15 @@ function App() {
         metaDescription = "";
         break;
       case "/mint2":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/gallery":
+        title = "";
+        metaDescription = "";
+        break;
+
+      case "/my-gallery":
         title = "";
         metaDescription = "";
         break;
@@ -77,6 +89,10 @@ function App() {
       <Route path="/mint2" element={<MINT2 />} />
 
       <Route path="/about" element={<ABOUT />} />
+
+      <Route path="/gallery" element={<GALLERY />} />
+
+      <Route path="/my-gallery" element={<MyGALLERY />} />
 
       <Route path="/customizng" element={<CUSTOMIZNG />} />
 

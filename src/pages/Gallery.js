@@ -2,8 +2,11 @@ import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./MINTCONNECTWALLET.module.css";
 import { v4 } from "uuid";
+import axios from "axios";
+import useAuth from "../hooks/useAuth";
 
-const MINTCONNECTWALLET = () => {
+const MINTCONNECTWALLET2 = () => {
+  const { user, setUser } = useAuth();
   const navigate = useNavigate();
 
   const onFAQClick = useCallback(() => {
@@ -12,7 +15,7 @@ const MINTCONNECTWALLET = () => {
 
   const onGALLERYClick = useCallback(() => {
     navigate("/gallery"); // Please sync "MINT4" to the project
-  }, []);
+  }, [navigate]);
 
   const onMINTClick = useCallback(() => {
     navigate("/mintconnect-wallet");
@@ -40,6 +43,7 @@ const MINTCONNECTWALLET = () => {
 
   async function loginWithMetamask() {
     var isConnected = await connectWithMetamask();
+
     //connect완료 될 경우 sign진행
     if (isConnected) {
       await signWithMetamask();
@@ -66,30 +70,95 @@ const MINTCONNECTWALLET = () => {
 
   async function signWithMetamask() {
     const contractAddress = "0x8fd2387871ACA7fA628643296Fd4f5Aae4c5c313"; // 테스트용 NFT 1001
-
     const chainId = "1001"; //klaytn Mainnet
     const message = "contract address : " + contractAddress;
+    const apiKey = "88a23596-fa71-47a1-9294-03b97b0ce696";
 
     // 지갑 네트워크와 조회하려는 NFT의 네트워크가 같은지 체크
-    if (String(window.ethereum.networkVersion) !== chainId) {
-      // toast.warn(
-      //   네트워크를 바오밥 테스트넷 (1001) 으로 변경해주세요. 현재 network : ${window.ethereum.networkVersion},
-      //   { position: toast.POSITION.BOTTOM_CENTER }
-      // );
-      return;
-    }
-
+    // if (String(window.ethereum.networkVersion) !== chainId) {
+    //   // toast.warn(
+    //   //   네트워크를 바오밥 테스트넷 (1001) 으로 변경해주세요. 현재 network : ${window.ethereum.networkVersion},
+    //   //   { position: toast.POSITION.BOTTOM_CENTER }
+    //   // );
+    //   return;
+    //   }
     let signObj;
-
     try {
-      window.ethereum.request({
+      signObj = await window.ethereum.request({
         method: "personal_sign",
         params: [message, window.ethereum.selectedAddress, v4()],
       });
+
       // 홀더인증 API (fastdive)
+      verifyHolder(
+        apiKey,
+        signObj,
+        message,
+        window.ethereum.selectedAddress,
+        contractAddress,
+        window.ethereum.networkVersion,
+        "metamask",
+        false
+      );
     } catch (e) {
       return;
     }
+  }
+
+  async function verifyHolder(
+    _apiKey, //apkKey
+    _signObj, // 서명값
+    _message, // 서명메세지
+    _ownerAddress, // 지갑주소 (msg.sender)
+    _contractAddress, // 조회할 NFT컨트랙트 주소
+    _chainId, // 체인아이디 ( klaytn : 8217, ethereum : 1 )
+    _walletType, // 지갑종류 ( "kaikas" or "metamask")
+    _onlyBalance //true면 밸런스만 조회
+  ) {
+    const url = "https://api.fast-dive.com/api/v1/nft/verifyHolder";
+
+    const params = {
+      sign: _signObj,
+      signMessage: _message,
+      contractAddress: _contractAddress,
+      chainId: _chainId,
+      walletType: _walletType,
+      onlyBalance: _onlyBalance,
+    };
+
+    const header = {
+      headers: {
+        "Content-Type": "application/json",
+        "x-api-key": _apiKey,
+      },
+    };
+
+    await axios
+      .post(url, params, header)
+      .then(function (response) {
+        const data = response.data.data;
+
+        if (data.balance > 0) {
+          // 로그인성공
+          console.log(data, "success");
+
+          // 결과값을 저장 시키고 myPage 에 넘겨주기
+          // setUser(data);
+          setUser(data.ownerAddress);
+
+          // navigate 함수 가져오고
+          const success = () => {
+            navigate("/my-gallery");
+          };
+          success();
+        } else {
+          // 로그인실패
+          console.log(data, "fail");
+        }
+      })
+      .catch(function (e) {
+        // error
+      });
   }
 
   return (
@@ -126,7 +195,7 @@ const MINTCONNECTWALLET = () => {
         }}
       >
         <div className={styles.coinbasewalletChild} id="METAMASK" />
-        <div className={styles.metaMask}> META MASK</div>
+        <div className={styles.metaMask}> META MASK2</div>
         <img
           className={styles.metamask1Icon}
           alt=""
@@ -178,4 +247,4 @@ const MINTCONNECTWALLET = () => {
   );
 };
 
-export default MINTCONNECTWALLET;
+export default MINTCONNECTWALLET2;

@@ -2,10 +2,30 @@ import { useCallback, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./MINT2.module.css";
 import { Colorful } from "@uiw/react-color";
-import { ReactComponent as Complete1 } from "../assets/complete1.svg";
+import { ReactComponent as BackgroundColor } from "../assets/backgroundColor.svg";
+
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+// import required modules
+import { Pagination, Navigation } from "swiper";
 
 const MINT2 = () => {
   const [hex, setHex] = useState("#fff");
+  const [backgroundColor, setBackgroundColor] = useState(
+    "https://gist.githubusercontent.com/B-oxygen/7125b95688d9e52eb329b5b74e62c00b/raw/9b45af604757456978020c3ad243dfce3b939260/backgroundColor.svg"
+  );
+  const [skinSort, setSkinSort] = useState("https://iili.io/HT56dbI.png");
+  const [hairSort, setHairSort] = useState("https://iili.io/HT56Ksn.png");
+  const [eyesSort, setEyesSort] = useState("https://iili.io/HT56oJ4.png");
+  const [eyebrowSort, setEyebrowSort] = useState("https://iili.io/HT56AX9.png");
+  const [clothesSort, setClothesSort] = useState("https://iili.io/HT56agj.png");
+
   const navigate = useNavigate();
 
   const onFAQClick = useCallback(() => {
@@ -13,7 +33,7 @@ const MINT2 = () => {
   }, [navigate]);
 
   const onGALLERYClick = useCallback(() => {
-    // Please sync "MINT4" to the project
+    navigate("/gallery"); // Please sync "MINT4" to the project
   }, []);
 
   const onMINTClick = useCallback(() => {
@@ -36,18 +56,73 @@ const MINT2 = () => {
     navigate("/");
   }, [navigate]);
 
+  const onMintNowClick = useState; // 민트 함수랑 이어져서 실행 하도록 하기
+
   return (
     <div className={styles.mint2}>
       <div className={styles.hair} id="HAIR">
         <div className={styles.hairChild} />
-        <div className={styles.hairItem} />
-        <img className={styles.icon3} alt="" src="../hair_1@1x.png" />
+        <div className={styles.hairItem}>
+          <Swiper
+            pagination={{
+              type: "progressbar",
+            }}
+            navigation={true}
+            modules={[Pagination, Navigation]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <img
+                className={styles.hair1}
+                alt=""
+                src="https://iili.io/HT56Ksn.png"
+                onClick={() => {
+                  setHairSort("https://iili.io/HT56Ksn.png");
+                }}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                className={styles.hair2}
+                alt=""
+                src="https://iili.io/HT56B0G.png"
+                onClick={() => {
+                  setHairSort("https://iili.io/HT56B0G.png");
+                }}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                className={styles.hair3}
+                alt=""
+                src="https://iili.io/HT56Cgf.png"
+                onClick={() => {
+                  setHairSort("https://iili.io/HT56Cgf.png");
+                }}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                className={styles.hair4}
+                alt=""
+                src="https://iili.io/HT56x5l.png"
+                onClick={() => {
+                  setHairSort("https://iili.io/HT56x5l.png");
+                }}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img className={styles.hair5} alt="추가 될 예정" src="" />
+            </SwiperSlide>
+          </Swiper>
+        </div>
+
         <img
           className={styles.nametagw4Icon}
           alt=""
           src="../nametagw-7@1x.png"
         />
-        <div className={styles.hair1}>HAIR</div>
+        <div className={styles.hairText}>HAIR</div>
         <img className={styles.hairInner} alt="" src="../polygon-3.svg" />
         <img className={styles.hairChild1} alt="" src="../polygon-4.svg" />
         <img className={styles.hairChild2} alt="" src="../ellipse-4.svg" />
@@ -126,18 +201,51 @@ const MINT2 = () => {
             setHex(color.hex);
           }}
         />
-        {/* <img
-          className={styles.backgroundcolorItem}
-          alt=""
-          src="../polygon-3.svg"
+      </div>
+      <div>
+        <BackgroundColor
+          className={styles.backgroundColorSort}
+          data-animate-on-scroll
+          fill={hex}
         />
         <img
-          className={styles.backgroundcolorInner}
-          alt=""
-          src="../polygon-4.svg"
-        /> */}
+          className={styles.skinSort}
+          data-animate-on-scroll
+          src={skinSort}
+          alt="skin"
+        />
+        <img
+          className={styles.outline}
+          data-animate-on-scroll
+          src="https://iili.io/HT569JR.png"
+          alt="outline"
+        />
+        <img
+          className={styles.hairSort}
+          data-animate-on-scroll
+          src={hairSort}
+          alt="hair"
+        />
+        <img
+          className={styles.eyesSort}
+          data-animate-on-scroll
+          src={eyesSort}
+          alt="eyes"
+        />{" "}
+        <img
+          className={styles.eyebrowsSort}
+          data-animate-on-scroll
+          src={eyebrowSort}
+          alt="eyebrow"
+        />
+        <img
+          className={styles.clothesSort}
+          data-animate-on-scroll
+          src={clothesSort}
+          alt="clothes"
+        />
       </div>
-      <Complete1 className={styles.completed1Icon} fill={hex} />
+
       <div className={styles.preview} id="preview">
         <img
           className={styles.nametagwt1Icon}
@@ -148,7 +256,9 @@ const MINT2 = () => {
       </div>
       <button className={styles.buttonMint} autoFocus>
         <div className={styles.buttonMintChild} id="MintButton" />
-        <div className={styles.mintNow}>MINT NOW</div>
+        <div className={styles.mintNow} onClick={onMintNowClick}>
+          MINT NOW
+        </div>
       </button>
       <div className={styles.navbar} id="navBar">
         <button className={styles.faq} autoFocus onClick={onFAQClick}>

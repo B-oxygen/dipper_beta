@@ -10,7 +10,7 @@ const MAIN = () => {
   }, [navigate]);
 
   const onGALLERYClick = useCallback(() => {
-    // Please sync "MINT4" to the project
+    navigate("/gallery"); // Please sync "MINT4" to the project
   }, []);
 
   const onMINTClick = useCallback(() => {
@@ -20,8 +20,6 @@ const MAIN = () => {
   const onABOUTClick = useCallback(() => {
     navigate("/about");
   }, [navigate]);
-
-
 
   const onIconTwitterClick = useCallback(() => {
     window.open("https://twitter.com/home?lang=ko");

@@ -12,10 +12,15 @@
     "@types/react-dom": "^18.0.6",
     "@uiw/react-color": "^1.1.1",
     "@uiw/react-color-colorful": "^1.1.1",
+    "axios": "^1.2.2",
+    "custom-swiper": "^0.1.129",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.1",
+    "react-toastify": "^9.1.1",
+    "swiper": "^8.4.5",
+    "uuid": "^9.0.0",
     "web-vitals": "^2.1.2"
   },
   "scripts": {

@@ -2,9 +2,7 @@ import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./CUSTOMIZNG.module.css";
 
-
 const CUSTOMIZNG = () => {
-
   const navigate = useNavigate();
 
   const onButtonBACKClick = useCallback(() => {
