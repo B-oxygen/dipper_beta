@@ -144,7 +144,7 @@ const MINTCONNECTWALLET2 = () => {
 
           // 결과값을 저장 시키고 myPage 에 넘겨주기
           // setUser(data);
-          setUser(data.ownerAddress);
+          setUser(data);
 
           // navigate 함수 가져오고
           const success = () => {
