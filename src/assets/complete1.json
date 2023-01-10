@@ -1,0 +1,15 @@
+{
+  "name": "DPP #1",
+  "image": "ipfs://QmePGEEDjfJMu1gYKqfS9REDxp7cCdqFZoMHEt1mEARTkV",
+  "description": "welcome to Dipper World!",
+  "attributes": [
+    { "trait_type": "Hair", "value": "1" },
+    { "trait_type": "HairColor", "value": "Gray" },
+    { "trait_type": "Clothes", "value": "1" },
+    { "trait_type": "ClothesColor", "value": "Dark Gray" },
+    { "trait_type": "Eyes", "value": "1" },
+    { "trait_type": "Eyebrows", "value": "1" },
+    { "trait_type": "SkinColor", "value": "1" },
+    { "trait_type": "BackgroundColor", "value": "#FFDB6D" }
+  ]
+}

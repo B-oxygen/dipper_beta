@@ -68,8 +68,10 @@ const MINTCONNECTWALLET2 = () => {
     }
   }
 
+  //0x8fd2387871aca7fa628643296fd4f5aae4c5c313
+  //
   async function signWithMetamask() {
-    const contractAddress = "0x8fd2387871ACA7fA628643296Fd4f5Aae4c5c313"; // 테스트용 NFT 1001
+    const contractAddress = "0x0895a3cd9a331068feabb1418e590f984d8e76cd"; // 테스트용 NFT 1001
     const chainId = "1001"; //klaytn Mainnet
     const message = "contract address : " + contractAddress;
     const apiKey = "88a23596-fa71-47a1-9294-03b97b0ce696";
@@ -83,6 +85,7 @@ const MINTCONNECTWALLET2 = () => {
     //   return;
     //   }
     let signObj;
+
     try {
       signObj = await window.ethereum.request({
         method: "personal_sign",

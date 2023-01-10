@@ -1,5 +1,5 @@
+import { useEffect, useState } from "react";
 import styled from "styled-components";
-
 import useAuth from "../../hooks/useAuth";
 
 const CardWrapper = styled.div`
@@ -45,11 +45,21 @@ const Title = styled.div`
 
 export default function MyItem({ item }) {
   const { user, setUser } = useAuth();
+  const [imgUrl, setImgUrl] = useState("");
 
   /**
    * image 선택
    * @param {*} item
    */
+
+  const ChangeIpfstoHttp = (item) => {
+    useEffect(() => {
+      setImgUrl("https://gateway.ipfs.io/ipfs/" + item.image.split("//")[1]);
+      return () => {};
+    }, []);
+    return;
+  };
+
   function selectImage(item) {
     if (!window.confirm("프로필 사진을 변경 하시겠습니까?")) {
     } else {
@@ -64,10 +74,12 @@ export default function MyItem({ item }) {
         onClick={() => {
           selectImage(item);
         }}
-        src={item.image}
-      ></CardImage>
+        src={imgUrl}
+      >
+        {ChangeIpfstoHttp(item)}
+      </CardImage>
       <InfoBox>
-        <CollectionTitle>{item.attributes[0].value}</CollectionTitle>
+        {/* <CollectionTitle>{item.attributes[0].value}</CollectionTitle> */}
         <Title>{item.name}</Title>
       </InfoBox>
     </CardWrapper>
