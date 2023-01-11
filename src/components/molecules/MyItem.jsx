@@ -20,10 +20,10 @@ const CardImage = styled.img`
 `;
 
 const InfoBox = styled.div`
-  width: 150px;
-  height: 73px;
+  width: 500px;
+  height: 200px;
   padding: 16px;
-  background-color: #27272a;
+  background-color: pink;
 `;
 
 const CollectionTitle = styled.div`
@@ -43,28 +43,33 @@ const Title = styled.div`
   white-space: nowrap;
 `;
 
-export default function MyItem({ item }) {
+export default function MyItem({ data, metadata }) {
   const { user, setUser } = useAuth();
   const [imgUrl, setImgUrl] = useState("");
-
+  const [php, setPhp] = useState("");
+  const imageURL = metadata.image;
   /**
    * image 선택
    * @param {*} item
    */
+  // const ConvertIpfstoHttp = () => {
+  useEffect(() => {
+    if (imageURL.indexOf("ipfs://") > -1) {
+      const convertedIpfsUrl =
+        "https://ipfs.io/ipfs/" + imageURL.split("ipfs://")[1];
+      return setPhp(convertedIpfsUrl), setImgUrl(convertedIpfsUrl);
+    }
+    return setImgUrl(imageURL), setPhp(imageURL);
+  }, []);
+  //   return;
+  // };
 
-  const ChangeIpfstoHttp = (item) => {
-    useEffect(() => {
-      setImgUrl("https://gateway.ipfs.io/ipfs/" + item.image.split("//")[1]);
-      return () => {};
-    }, []);
-    return;
-  };
-
-  function selectImage(item) {
+  function selectImage(metadata) {
     if (!window.confirm("프로필 사진을 변경 하시겠습니까?")) {
     } else {
-      console.log(item);
-      setUser({ ...user, imageUrl: item.image });
+      console.log(metadata);
+      setUser({ ...user, imageUrl: metadata.image });
+      setPhp(imgUrl);
     }
   }
 
@@ -72,15 +77,21 @@ export default function MyItem({ item }) {
     <CardWrapper>
       <CardImage
         onClick={() => {
-          selectImage(item);
+          selectImage(metadata);
         }}
         src={imgUrl}
       >
-        {ChangeIpfstoHttp(item)}
+        {/* {ConvertIpfstoHttp(metadata)} */}
       </CardImage>
       <InfoBox>
         {/* <CollectionTitle>{item.attributes[0].value}</CollectionTitle> */}
-        <Title>{item.name}</Title>
+        <Title>{metadata.name}</Title>
+      </InfoBox>
+      <CardImage src={php} />
+      <InfoBox>
+        <h1>userInfo</h1>
+        <CollectionTitle>ownerAddress : {data.ownerAddress}</CollectionTitle>
+        <Title>{metadata.name}</Title>
       </InfoBox>
     </CardWrapper>
   );

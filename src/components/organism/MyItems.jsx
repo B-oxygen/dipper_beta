@@ -2,14 +2,16 @@ import React from "react";
 import HideScrollX from "../molecules/HideScrollX";
 import MyItem from "../molecules/MyItem";
 
-export default function MyItems({ metadata }) {
+export default function MyItems({ data }) {
   return (
     <HideScrollX>
-      {metadata.length === 1 ? (
-        <MyItem item={metadata[0].metadata} />
-      ) : (
-        metadata.map((item) => <MyItem item={item.metadata} />)
-      )}
+      {data.result.map((index) => (
+        <MyItem
+          data={data}
+          metadata={index.metadata}
+          key={index.metadata.name}
+        />
+      ))}
     </HideScrollX>
   );
 }

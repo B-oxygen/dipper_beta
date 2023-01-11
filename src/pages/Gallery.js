@@ -1,13 +1,25 @@
-import { useCallback } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./MINTCONNECTWALLET.module.css";
 import { v4 } from "uuid";
 import axios from "axios";
 import useAuth from "../hooks/useAuth";
 
+// toast
+import { toast } from "react-toastify";
+
 const MINTCONNECTWALLET2 = () => {
   const { user, setUser } = useAuth();
+
+  const [loadingTitle, setLoadingTitle] = useState("");
+  const [isFirst, setIsFirst] = useState(true);
+  const { klaytn, ethereum } = window;
+
   const navigate = useNavigate();
+
+  const navigatetoMyGallery = () => {
+    navigate("/my-gallery");
+  };
 
   const onFAQClick = useCallback(() => {
     navigate("/faq");
@@ -41,9 +53,28 @@ const MINTCONNECTWALLET2 = () => {
     navigate("/");
   }, [navigate]);
 
+  /**
+   * 프로필 사진 변경 감지 (myItem.jsx)
+   */
+  useEffect(() => {
+    if (user.imageUrl) {
+      if (isFirst) {
+        setIsFirst(false);
+      } else {
+        toast.success("프로필사진이 변경되었습니다.", {
+          position: toast.POSITION.BOTTOM_CENTER,
+        });
+      }
+      // setIsOpenProfileModal(true);
+    }
+  }, [user.imageUrl]);
+
+  /**
+   * 0. 메타마스크 로그인 버튼
+   * @returns
+   */
   async function loginWithMetamask() {
     var isConnected = await connectWithMetamask();
-
     //connect완료 될 경우 sign진행
     if (isConnected) {
       await signWithMetamask();
@@ -52,116 +83,191 @@ const MINTCONNECTWALLET2 = () => {
     }
   }
 
+  /**
+   * 1. 메타마스크 <-> 웹사이트 connect 확인
+   * @returns bool
+   */
   async function connectWithMetamask() {
     if (typeof window.ethereum !== "undefined") {
     } else {
+      toast.error("Metamask 설치 해주세요!", {
+        position: toast.POSITION.TOP_CENTER,
+      });
       return false;
     }
+
+    setLoadingTitle("연결중...");
+
     try {
-      await window.ethereum.request({
+      await ethereum.request({
         method: "eth_requestAccounts",
       });
 
       return true;
     } catch (e) {
+      toast.error("로그인 실패..! 다시 시도해주세요~^^", {
+        position: toast.POSITION.BOTTOM_CENTER,
+      });
       return false;
     }
   }
 
-  //0x8fd2387871aca7fa628643296fd4f5aae4c5c313
-  //
+  /**
+   * 2. 메타마스크 서명
+   */
   async function signWithMetamask() {
-    const contractAddress = "0x0895a3cd9a331068feabb1418e590f984d8e76cd"; // 테스트용 NFT 1001
-    const chainId = "1001"; //klaytn Mainnet
-    const message = "contract address : " + contractAddress;
-    const apiKey = "88a23596-fa71-47a1-9294-03b97b0ce696";
+    setLoadingTitle("NFT 확인중...");
+
+    const contractAddress = "0x0895a3cd9A331068FEABB1418E590f984D8e76cD";
+    // const contractAddress = "0x8fd2387871ACA7fA628643296Fd4f5Aae4c5c313"; // 테스트용 NFT 1001
+    // const contractAddress = "0xd643bb39f81ff9079436f726d2ed27abc547cb38"; // 푸빌라 8217
+
+    const chainId = "1001"; //klaytn testnet
+    const message =
+      "[ NFT HOLDER VERIFY ]  \n contract address : " +
+      contractAddress +
+      "\n\n Powered by fast-dive";
 
     // 지갑 네트워크와 조회하려는 NFT의 네트워크가 같은지 체크
-    // if (String(window.ethereum.networkVersion) !== chainId) {
-    //   // toast.warn(
-    //   //   네트워크를 바오밥 테스트넷 (1001) 으로 변경해주세요. 현재 network : ${window.ethereum.networkVersion},
-    //   //   { position: toast.POSITION.BOTTOM_CENTER }
-    //   // );
-    //   return;
-    //   }
+    if (String(window.ethereum.networkVersion) !== chainId) {
+      toast.warn(
+        `네트워크를 바오밥 테스트넷 (1001) 으로 변경해주세요. 현재 network : ${window.ethereum.networkVersion}`,
+        { position: toast.POSITION.BOTTOM_CENTER }
+      );
+
+      return;
+    }
+
     let signObj;
 
     try {
-      signObj = await window.ethereum.request({
-        method: "personal_sign",
-        params: [message, window.ethereum.selectedAddress, v4()],
-      });
+      signObj = await toast.promise(
+        window.ethereum.request({
+          method: "personal_sign",
+          params: [message, window.ethereum.selectedAddress, v4()],
+        }),
+        {
+          pending: "보유한 NFT 확인중...",
+        },
+        { closeButton: true }
+      );
 
       // 홀더인증 API (fastdive)
-      verifyHolder(
-        apiKey,
-        signObj,
-        message,
+
+      // fastdive API =======================================================
+      const apiKey = "88a23596-fa71-47a1-9294-03b97b0ce696";
+      const result2 = await verifyHolder2(
+        apiKey, // API키
+        signObj, // 서명값
+        message, // 서명메세지
+        contractAddress, // NFT 컨트랙트주소
+        chainId, //체인아이디
+        "metamask", //지갑종류
+        false // 보유개수만 조회할지 여부 (true일경우 개수만)
+      );
+
+      //조회결과
+      const data = result2.data.data;
+      console.log("조회결과 확인: " + data);
+      console.log("개수조회: " + data.balance);
+      // =====================================================================
+
+      //조회 후처리
+      setDataAfterVerifyHolder(
+        result2,
         window.ethereum.selectedAddress,
-        contractAddress,
-        window.ethereum.networkVersion,
-        "metamask",
-        false
+        "metamask"
       );
     } catch (e) {
+      toast.error("로그인 실패..! 다시 시도해주세요~^^", {
+        position: toast.POSITION.BOTTOM_CENTER,
+      });
       return;
     }
   }
-
-  async function verifyHolder(
-    _apiKey, //apkKey
-    _signObj, // 서명값
-    _message, // 서명메세지
-    _ownerAddress, // 지갑주소 (msg.sender)
-    _contractAddress, // 조회할 NFT컨트랙트 주소
-    _chainId, // 체인아이디 ( klaytn : 8217, ethereum : 1 )
-    _walletType, // 지갑종류 ( "kaikas" or "metamask")
-    _onlyBalance //true면 밸런스만 조회
+  /**
+   * verifyHolder 2
+   * @param {*} apiKey
+   * @param {*} signObj
+   * @param {*} message
+   * @param {*} contractAddress
+   * @param {*} chainId
+   * @param {*} walletType
+   * @param {*} onlyBalance
+   * @returns
+   */
+  async function verifyHolder2(
+    apiKey,
+    signObj,
+    message,
+    contractAddress,
+    chainId,
+    walletType,
+    onlyBalance
   ) {
-    const url = "https://api.fast-dive.com/api/v1/nft/verifyHolder";
-
-    const params = {
-      sign: _signObj,
-      signMessage: _message,
-      contractAddress: _contractAddress,
-      chainId: _chainId,
-      walletType: _walletType,
-      onlyBalance: _onlyBalance,
-    };
-
     const header = {
       headers: {
         "Content-Type": "application/json",
-        "x-api-key": _apiKey,
+        "x-api-key": apiKey,
       },
     };
 
-    await axios
-      .post(url, params, header)
-      .then(function (response) {
-        const data = response.data.data;
+    const url = "https://api.fast-dive.com/api/v1/nft/verifyHolder";
 
-        if (data.balance > 0) {
-          // 로그인성공
-          console.log(data, "success");
+    const params = {
+      sign: signObj,
+      signMessage: message,
+      contractAddress: contractAddress,
+      chainId: chainId,
+      walletType: walletType,
+      onlyBalance: onlyBalance,
+    };
 
-          // 결과값을 저장 시키고 myPage 에 넘겨주기
-          // setUser(data);
-          setUser(data);
-
-          // navigate 함수 가져오고
-          const success = () => {
-            navigate("/my-gallery");
-          };
-          success();
-        } else {
-          // 로그인실패
-          console.log(data, "fail");
-        }
-      })
-      .catch(function (e) {
-        // error
+    return await axios.post(url, params, header);
+  }
+  /**
+   * nft verify Holder 후처리
+   * @param {*} result
+   * @param {*} ownerAddress
+   * @param {*} walletType
+   * @returns
+   */
+  function setDataAfterVerifyHolder(result, ownerAddress, walletType) {
+    const data = result.data.data;
+    //로그인 요청지갑과 복호화 한 지갑 확인
+    if (ownerAddress.toUpperCase() !== data.ownerAddress.toUpperCase()) {
+      debugger;
+      toast.error("지갑주소가 일치하지 않습니다.", {
+        position: toast.POSITION.BOTTOM_CENTER,
       });
+      return;
+    }
+    // 조건만족시 로그인 처리
+    if (data.balance > 0) {
+      toast.success(`로그인 완료 (balance : ${data.balance})`, {
+        position: toast.POSITION.BOTTOM_CENTER,
+      });
+
+      setUser({ account: ownerAddress, wallet: walletType });
+
+      // 메타데이터 조회시 첫번째 NFT 이미지Url 저장
+      if (data.onlyBalance === false && data.result[0].metadata.image) {
+        setUser({
+          account: ownerAddress,
+          wallet: walletType,
+          imageUrl: data.result[0].metadata.image,
+          result: data.result,
+        });
+        navigatetoMyGallery();
+      }
+    } else {
+      toast.error(
+        "해당지갑에 NFT를 보유하고 있지 않습니다. 지갑주소를 확인해주세요.",
+        {
+          position: toast.POSITION.BOTTOM_CENTER,
+        }
+      );
+    }
   }
 
   return (
