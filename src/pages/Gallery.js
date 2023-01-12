@@ -118,6 +118,7 @@ const MINTCONNECTWALLET2 = () => {
   async function signWithMetamask() {
     setLoadingTitle("NFT 확인중...");
 
+    //0x1c3C01DC7E9a2A62D25c7Bb705C8F7c27FdF7540
     const contractAddress = "0x0895a3cd9A331068FEABB1418E590f984D8e76cD";
     // const contractAddress = "0x8fd2387871ACA7fA628643296Fd4f5Aae4c5c313"; // 테스트용 NFT 1001
     // const contractAddress = "0xd643bb39f81ff9079436f726d2ed27abc547cb38"; // 푸빌라 8217

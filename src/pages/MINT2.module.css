@@ -503,40 +503,31 @@
 
 .hair1 {
   top: 0px;
-  left: -89px;
-  width: 400px;
-  height: 300px;
+  width: 211px;
   object-fit: cover;
   position: absolute;
 }
 .hair2 {
   top: 0px;
-  left: -88px;
-  width: 400px;
-  height: 300px;
+  width: 211px;
   object-fit: cover;
   position: absolute;
 }
 .hair3 {
   top: 0px;
-  left: -65px;
-  width: 360px;
-  height: 270px;
+  width: 211px;
   object-fit: cover;
   position: absolute;
 }
 .hair4 {
   top: 0px;
-  left: -88px;
-  width: 400px;
-  height: 300px;
+  width: 211px;
   object-fit: cover;
   position: absolute;
 }
 .hair5 {
   top: 0px;
-  width: 400px;
-  height: 300px;
+  width: 211px;
   object-fit: cover;
 }
 

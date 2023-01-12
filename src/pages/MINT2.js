@@ -6,14 +6,12 @@ import { ReactComponent as BackgroundColor } from "../assets/backgroundColor.svg
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-
 // import required modules
 import { Pagination, Navigation } from "swiper";
+// Import Swiper styles
+import "swiper/scss";
+import "swiper/scss/pagination";
+import "swiper/scss/navigation";
 
 const MINT2 = () => {
   const [hex, setHex] = useState("#fff");
@@ -56,7 +54,7 @@ const MINT2 = () => {
     navigate("/");
   }, [navigate]);
 
-  const onMintNowClick = useState; // 민트 함수랑 이어져서 실행 하도록 하기
+  const onMintNowClick = () => {}; // 민트 함수랑 이어져서 실행 하도록 하기
 
   return (
     <div className={styles.mint2}>
@@ -70,6 +68,7 @@ const MINT2 = () => {
             navigation={true}
             modules={[Pagination, Navigation]}
             className="mySwiper"
+            slidesPerView={1}
           >
             <SwiperSlide>
               <img

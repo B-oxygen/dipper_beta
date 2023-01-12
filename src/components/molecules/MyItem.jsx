@@ -48,11 +48,12 @@ export default function MyItem({ data, metadata }) {
   const [imgUrl, setImgUrl] = useState("");
   const [php, setPhp] = useState("");
   const imageURL = metadata.image;
+
   /**
    * image 선택
    * @param {*} item
    */
-  // const ConvertIpfstoHttp = () => {
+
   useEffect(() => {
     if (imageURL.indexOf("ipfs://") > -1) {
       const convertedIpfsUrl =
@@ -61,8 +62,6 @@ export default function MyItem({ data, metadata }) {
     }
     return setImgUrl(imageURL), setPhp(imageURL);
   }, []);
-  //   return;
-  // };
 
   function selectImage(metadata) {
     if (!window.confirm("프로필 사진을 변경 하시겠습니까?")) {
@@ -80,9 +79,7 @@ export default function MyItem({ data, metadata }) {
           selectImage(metadata);
         }}
         src={imgUrl}
-      >
-        {/* {ConvertIpfstoHttp(metadata)} */}
-      </CardImage>
+      ></CardImage>
       <InfoBox>
         {/* <CollectionTitle>{item.attributes[0].value}</CollectionTitle> */}
         <Title>{metadata.name}</Title>
@@ -90,7 +87,7 @@ export default function MyItem({ data, metadata }) {
       <CardImage src={php} />
       <InfoBox>
         <h1>userInfo</h1>
-        <CollectionTitle>ownerAddress : {data.ownerAddress}</CollectionTitle>
+        <CollectionTitle>ownerAddress : {user.account}</CollectionTitle>
         <Title>{metadata.name}</Title>
       </InfoBox>
     </CardWrapper>
