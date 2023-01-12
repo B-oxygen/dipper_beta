@@ -503,31 +503,31 @@
 
 .hair1 {
   top: 0px;
-  width: 211px;
+  width: 100%;
   object-fit: cover;
   position: absolute;
 }
 .hair2 {
   top: 0px;
-  width: 211px;
+  width: 100%;
   object-fit: cover;
   position: absolute;
 }
 .hair3 {
   top: 0px;
-  width: 211px;
+  width: 100%;
   object-fit: cover;
   position: absolute;
 }
 .hair4 {
   top: 0px;
-  width: 211px;
+  width: 100%;
   object-fit: cover;
   position: absolute;
 }
 .hair5 {
   top: 0px;
-  width: 211px;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -565,4 +565,8 @@
 }
 .clothesSort {
   z-index: 6;
+}
+
+.mySwiper {
+  height: 100%;
 }

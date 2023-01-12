@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import { useCallback, useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./MINT2.module.css";
 import { Colorful } from "@uiw/react-color";
@@ -25,7 +25,7 @@ const MINT2 = () => {
   const [clothesSort, setClothesSort] = useState("https://iili.io/HT56agj.png");
 
   const navigate = useNavigate();
-
+  const swiperRef = useRef(null);
   const onFAQClick = useCallback(() => {
     navigate("/faq");
   }, [navigate]);
@@ -65,10 +65,12 @@ const MINT2 = () => {
             pagination={{
               type: "progressbar",
             }}
-            navigation={true}
             modules={[Pagination, Navigation]}
-            className="mySwiper"
+            className={styles.mySwiper}
             slidesPerView={1}
+            onBeforeInit={(swiper) => {
+              swiperRef.current = swiper;
+            }}
           >
             <SwiperSlide>
               <img
@@ -115,15 +117,25 @@ const MINT2 = () => {
             </SwiperSlide>
           </Swiper>
         </div>
-
+        a
         <img
           className={styles.nametagw4Icon}
           alt=""
           src="../nametagw-7@1x.png"
         />
         <div className={styles.hairText}>HAIR</div>
-        <img className={styles.hairInner} alt="" src="../polygon-3.svg" />
-        <img className={styles.hairChild1} alt="" src="../polygon-4.svg" />
+        <img
+          className={styles.hairInner}
+          alt=""
+          src="../polygon-3.svg"
+          onClick={() => swiperRef.current?.slideNext()}
+        />
+        <img
+          className={styles.hairChild1}
+          alt=""
+          src="../polygon-4.svg"
+          onClick={() => swiperRef.current?.slidePrev()}
+        />
         <img className={styles.hairChild2} alt="" src="../ellipse-4.svg" />
         <img className={styles.hairChild3} alt="" src="../ellipse-5.svg" />
         <img className={styles.hairChild4} alt="" src="../ellipse-6.svg" />

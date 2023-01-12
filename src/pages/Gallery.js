@@ -119,11 +119,11 @@ const MINTCONNECTWALLET2 = () => {
     setLoadingTitle("NFT 확인중...");
 
     //0x1c3C01DC7E9a2A62D25c7Bb705C8F7c27FdF7540
-    const contractAddress = "0x0895a3cd9A331068FEABB1418E590f984D8e76cD";
+    const contractAddress = "0xC08147CA45b817fe4B8078a7B380d31f76323D17";
     // const contractAddress = "0x8fd2387871ACA7fA628643296Fd4f5Aae4c5c313"; // 테스트용 NFT 1001
     // const contractAddress = "0xd643bb39f81ff9079436f726d2ed27abc547cb38"; // 푸빌라 8217
 
-    const chainId = "1001"; //klaytn testnet
+    const chainId = "5"; //klaytn testnet
     const message =
       "[ NFT HOLDER VERIFY ]  \n contract address : " +
       contractAddress +
@@ -132,7 +132,7 @@ const MINTCONNECTWALLET2 = () => {
     // 지갑 네트워크와 조회하려는 NFT의 네트워크가 같은지 체크
     if (String(window.ethereum.networkVersion) !== chainId) {
       toast.warn(
-        `네트워크를 바오밥 테스트넷 (1001) 으로 변경해주세요. 현재 network : ${window.ethereum.networkVersion}`,
+        `네트워크를 goerli 테스트넷 ( 5 ) 으로 변경해주세요. 현재 network : ${window.ethereum.networkVersion}`,
         { position: toast.POSITION.BOTTOM_CENTER }
       );
 
