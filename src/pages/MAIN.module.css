@@ -23,50 +23,41 @@
   height: 772px;
   cursor: pointer;
 }
-.about {
+
+.main {
+  position: relative;
+  background-color: rgba(124, 153, 255, 0.85);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+}
+
+.iconLogo {
   cursor: pointer;
   border: 0;
   padding: 0;
   background-color: transparent;
-  position: absolute;
-  top: 3px;
-  font-size: var(--font-size-base);
-  font-family: var(--font-inder);
-  color: var(--color-white);
-  text-align: left;
-  display: inline-block;
-}
-.faq {
-  right: 156px;
-}
-.faq,
-.gallery,
-.mint,
-.roadmap {
+  background-image: url(../../public/d1@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  top: 35px;
+  left: 32px;
+  width: 60px;
+  height: 50px;
   cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
   position: absolute;
-  top: 3px;
-  font-size: var(--font-size-base);
-  font-family: var(--font-inder);
-  color: var(--color-white);
-  text-align: left;
-  display: inline-block;
+  object-fit: cover;
 }
-.roadmap {
-  right: 241px;
+.navbar {
+  top: 35px;
+  right: 43px;
+  width: 1365px;
+  position: absolute;
+  height: 50px;
 }
-.gallery {
-  right: 379px;
-}
-.mint {
-  right: 505px;
-}
-.about {
-  right: 595px;
-}
+
 .iconDiscord,
 .iconTwitter {
   text-decoration: none;
@@ -90,34 +81,35 @@
   height: 40px;
   background-image: url(../../public/icon-discord@3x.png);
 }
-.iconLogo,
-.navbar {
-  position: absolute;
-  height: 50px;
-}
-.iconLogo {
+.about,
+.team,
+.gallery,
+.mint,
+.roadmap {
   cursor: pointer;
   border: 0;
   padding: 0;
   background-color: transparent;
-  top: 0;
-  left: 0;
-  width: 60px;
-  background-image: url(../../public/d1@3x.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
+  position: absolute;
+  top: 3px;
+  font-size: var(--font-size-base);
+  font-family: var(--font-inder);
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
 }
-.navbar {
-  top: 35px;
-  right: 43px;
-  width: 1365px;
+.team {
+  right: 156px;
 }
-.main {
-  position: relative;
-  background-color: rgba(124, 153, 255, 0.85);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  width: 100%;
-  height: 1024px;
-  overflow: hidden;
+.roadmap {
+  right: 241px;
+}
+.gallery {
+  right: 379px;
+}
+.mint {
+  right: 505px;
+}
+.about {
+  right: 595px;
 }

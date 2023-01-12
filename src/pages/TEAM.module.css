@@ -1,0 +1,339 @@
+.teampartners2Child {
+  position: absolute;
+  top: 304px;
+  left: -24px;
+  background-color: var(--color-violet-200);
+  width: 2607px;
+  height: 1000px;
+}
+.icon {
+  top: -39px;
+  left: -70px;
+  width: 2700px;
+  height: 1519px;
+  display: none;
+}
+.dipperx2Icon,
+.icon,
+.icon1 {
+  position: absolute;
+  object-fit: cover;
+}
+.icon1 {
+  top: 1042px;
+  left: 194px;
+  width: 386px;
+  height: 290px;
+  display: none;
+}
+.dipperx2Icon {
+  top: 148px;
+  left: 1143px;
+  width: 273px;
+  height: 99px;
+}
+.sejunPark1 {
+  letter-spacing: 0.21em;
+}
+.span {
+  letter-spacing: 0.56em;
+}
+.sejunPark {
+  position: absolute;
+  top: 709px;
+  left: 132px;
+  line-height: 250%;
+  display: inline-block;
+  width: 289px;
+  height: 92px;
+}
+.ctoCeo {
+  top: 771px;
+  left: 180px;
+  font-size: var(--font-size-base);
+  width: 193px;
+  height: 61px;
+}
+.artDirector,
+.ctoCeo,
+.sodamHong {
+  position: absolute;
+  letter-spacing: 0.21em;
+  line-height: 250%;
+  display: inline-block;
+}
+.artDirector {
+  top: 774px;
+  left: 679px;
+  font-size: var(--font-size-base);
+  width: 223px;
+  height: 61px;
+}
+.sodamHong {
+  top: 707px;
+  left: 650px;
+  width: 309px;
+  height: 92px;
+}
+.icon2 {
+  top: 181px;
+  left: 0;
+  border-radius: 399px;
+  width: 500px;
+  height: 502.08px;
+}
+.icon2,
+.icon3,
+.nametagw10Icon {
+  position: absolute;
+  object-fit: cover;
+}
+.icon3 {
+  top: 186px;
+  left: 514px;
+  border-radius: 432px;
+  width: 498.64px;
+  height: 500px;
+}
+.nametagw10Icon {
+  bottom: 718px;
+  left: 280px;
+  width: 467px;
+  height: 34px;
+}
+.teamText {
+  position: absolute;
+  top: 0;
+  left: 421px;
+  font-size: var(--font-size-4xl);
+  letter-spacing: 0.56em;
+  line-height: 250%;
+  text-shadow: 2px 4px 21px #fff;
+}
+.sejunParkParent {
+  top: 372px;
+  left: 115px;
+  width: 1012.64px;
+  height: 835px;
+}
+.d1617,
+.d3Icon,
+.sejunParkParent {
+  position: absolute;
+}
+.d3Icon {
+  top: 35px;
+  left: 32px;
+  width: 60px;
+  height: 50px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.d1617 {
+  top: 558px;
+  left: 247px;
+  line-height: 0%;
+}
+.rhdtkqkrgmailcom {
+  position: absolute;
+  top: 260px;
+  left: 250px;
+  letter-spacing: 0.14em;
+  line-height: 250%;
+}
+.email {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.location {
+  margin: 0;
+}
+.emailPhoneLocationContainer {
+  position: absolute;
+  top: 238px;
+  left: 0;
+  font-size: var(--font-size-xl);
+  letter-spacing: 0.14em;
+  line-height: 422%;
+  text-align: left;
+}
+.div {
+  position: absolute;
+  top: 384px;
+  left: 250px;
+  letter-spacing: 0.01em;
+  line-height: 250%;
+}
+.nametagw11Icon {
+  position: absolute;
+  bottom: 502px;
+  left: 196px;
+  width: 467px;
+  height: 34px;
+  object-fit: cover;
+}
+.contact {
+  position: absolute;
+  top: 0;
+  left: 290px;
+  font-size: var(--font-size-4xl);
+  letter-spacing: 0.56em;
+  line-height: 250%;
+  text-align: left;
+  text-shadow: 2px 4px 21px #fff;
+}
+.d1617Parent {
+  position: absolute;
+  top: 372px;
+  left: 1459px;
+  width: 934px;
+  height: 619px;
+  text-align: right;
+  font-size: var(--font-size-3xl);
+}
+.about,
+.gallery {
+  position: absolute;
+  top: 3px;
+  right: 379px;
+  cursor: pointer;
+}
+.about {
+  right: 595px;
+}
+.roadmap {
+  right: 241px;
+  cursor: pointer;
+}
+.mint,
+.roadmap,
+.team1 {
+  position: absolute;
+  top: 3px;
+}
+.team1 {
+  right: 145px;
+  cursor: pointer;
+}
+.mint {
+  right: 505px;
+}
+.icon4 {
+  top: 0;
+  right: 68px;
+  width: 42px;
+  height: 40px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.icon4,
+.icon5,
+.menu {
+  position: absolute;
+}
+.icon5 {
+  top: 2px;
+  right: 0;
+  width: 38px;
+  height: 38px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.menu {
+  top: 35px;
+  right: 43px;
+  width: 661px;
+  height: 40px;
+  font-size: var(--font-size-base);
+}
+.teampartners2 {
+  position: relative;
+  background-color: var(--color-violet-100);
+  width: 100%;
+  height: 1440px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+  font-family: var(--font-inder);
+}
+.iconLogo {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  background-image: url(../../public/d1@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  top: 35px;
+  left: 32px;
+  width: 60px;
+  height: 50px;
+  cursor: pointer;
+  position: absolute;
+  object-fit: cover;
+}
+.navbar {
+  top: 35px;
+  right: 43px;
+  width: 1365px;
+  position: absolute;
+  height: 50px;
+}
+
+.iconDiscord,
+.iconTwitter {
+  text-decoration: none;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  cursor: pointer;
+}
+.iconTwitter {
+  top: 2px;
+  right: 0;
+  width: 38px;
+  height: 38px;
+  background-image: url(../../public/icon-twitter@3x.png);
+}
+.iconDiscord {
+  top: 0;
+  right: 68px;
+  width: 42px;
+  height: 40px;
+  background-image: url(../../public/icon-discord@3x.png);
+}
+.about,
+.team,
+.gallery,
+.mint,
+.roadmap {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 3px;
+  font-size: var(--font-size-base);
+  font-family: var(--font-inder);
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
+}
+.team {
+  right: 156px;
+}
+.roadmap {
+  right: 241px;
+}
+.gallery {
+  right: 379px;
+}
+.mint {
+  right: 505px;
+}
+.about {
+  right: 595px;
+}

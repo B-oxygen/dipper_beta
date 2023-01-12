@@ -21,25 +21,29 @@ const MINTCONNECTWALLET = () => {
     navigate("/mint2");
   };
 
-  const onFAQClick = useCallback(() => {
-    navigate("/faq");
-  }, [navigate]);
-
-  const onGALLERYClick = useCallback(() => {
-    navigate("/gallery"); // Please sync "MINT4" to the project
-  }, []);
-
-  const onMINTClick = useCallback(() => {
-    navigate("/mintconnect-wallet");
+  const onLOGOClick = useCallback(() => {
+    navigate("/");
   }, [navigate]);
 
   const onABOUTClick = useCallback(() => {
     navigate("/about");
   }, [navigate]);
 
-  const onButtonNEXTClick = useCallback(() => {
-    navigate("/mint2");
+  const onMINTClick = useCallback(() => {
+    navigate("/mintconnect-wallet");
   }, [navigate]);
+
+  const onGALLERYClick = useCallback(() => {
+    navigate("/gallery");
+  }, []);
+
+  const onROADMAPClick = useCallback(() => {
+    navigate("/roadmap");
+  }, []);
+
+  const onTEAMClick = useCallback(() => {
+    navigate("/team");
+  }, []);
 
   const onIconTwitterClick = useCallback(() => {
     window.open("https://twitter.com/home?lang=ko");
@@ -49,9 +53,9 @@ const MINTCONNECTWALLET = () => {
     window.open("https://discord.com/");
   }, []);
 
-  const onIconLogoClick = useCallback(() => {
-    navigate("/");
-  }, [navigate]);
+  const onNEXTClick = useCallback(() => {
+    navigate("/howtouse");
+  }, []);
 
   /**
    * 0. 메타마스크 로그인 버튼
@@ -102,7 +106,7 @@ const MINTCONNECTWALLET = () => {
   async function signWithMetamask() {
     setLoadingTitle("NFT 확인중...");
 
-    const contractAddress = "0xC08147CA45b817fe4B8078a7B380d31f76323D17";
+    const contractAddress = "0xF6134166bDC31E9bcB3DA82b6e8D513fC3f966E7";
     // const contractAddress = "0x8fd2387871ACA7fA628643296Fd4f5Aae4c5c313"; // 테스트용 NFT 1001
     // const contractAddress = "0xd643bb39f81ff9079436f726d2ed27abc547cb38"; // 푸빌라 8217
 
@@ -294,40 +298,26 @@ const MINTCONNECTWALLET = () => {
         <div className={styles.connectWallet1}>CONNECT WALLET</div>
       </div>
 
-      <button
-        className={styles.buttonNext}
-        autoFocus
-        onClick={onButtonNEXTClick}
-      >
-        <img
-          className={styles.nametagwt1Icon}
-          alt=""
-          src="../nametagwt-11@1x.png"
-        />
-        <div className={styles.next}>NEXT</div>
-      </button>
-
+      <button className={styles.iconLogo} autoFocus onClick={onLOGOClick} />
       <div className={styles.navbar} id="navBar">
-        <button className={styles.faq} autoFocus onClick={onFAQClick}>
-          FAQ
-        </button>
-        <button className={styles.roadmap}>ROADMAP</button>
-        <button className={styles.gallery} autoFocus onClick={onGALLERYClick}>
-          GALLERY
+        <button className={styles.about} autoFocus onClick={onABOUTClick}>
+          ABOUT
         </button>
         <button className={styles.mint} autoFocus onClick={onMINTClick}>
           MINT
         </button>
-        <button className={styles.about} autoFocus onClick={onABOUTClick}>
-          ABOUT
+        <button className={styles.gallery} autoFocus onClick={onGALLERYClick}>
+          GALLERY
         </button>
+        <button className={styles.roadmap} autoFocus onClick={onROADMAPClick}>
+          ROADMAP
+        </button>
+        <button className={styles.team} autoFocus onClick={onTEAMClick}>
+          TEAM
+        </button>
+
         <a className={styles.iconTwitter} onClick={onIconTwitterClick} />
         <a className={styles.iconDiscord} onClick={onIconDiscordClick} />
-        <button
-          className={styles.iconLogo}
-          autoFocus
-          onClick={onIconLogoClick}
-        />
       </div>
     </div>
   );

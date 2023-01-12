@@ -1,0 +1,330 @@
+.groupChild {
+  position: absolute;
+  top: 269px;
+  left: 0;
+  background-color: var(--color-violet-200);
+  width: 2607px;
+  height: 1000px;
+}
+.dipperx2Icon {
+  position: absolute;
+  top: 113px;
+  left: 1167px;
+  width: 273px;
+  height: 99px;
+  object-fit: cover;
+}
+.likelion {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.techit {
+  margin: 0;
+}
+.likelionTechit {
+  position: absolute;
+  top: 691px;
+  left: 207px;
+  letter-spacing: 0.21em;
+  display: inline-block;
+}
+.cfn,
+.likelionTechit,
+.ttot {
+  line-height: 156%;
+  width: 157px;
+  height: 88px;
+}
+.ttot {
+  position: absolute;
+  top: 1078px;
+  left: 261px;
+  letter-spacing: 0.21em;
+  display: inline-block;
+}
+.cfn {
+  top: 1080px;
+  left: 572px;
+}
+.bloodDonation,
+.cfn,
+.ministryOfForeignContainer,
+.toco {
+  position: absolute;
+  letter-spacing: 0.21em;
+  display: inline-block;
+}
+.toco {
+  top: 685px;
+  left: 948px;
+  line-height: 250%;
+  text-align: left;
+  width: 93px;
+  height: 70px;
+}
+.bloodDonation,
+.ministryOfForeignContainer {
+  top: 691px;
+  left: 463px;
+  line-height: 156%;
+  width: 382px;
+  height: 88px;
+}
+.bloodDonation {
+  top: 701px;
+  left: 1183px;
+  width: 183px;
+}
+.aslanAcademy,
+.devwiki,
+.fastDive,
+.footprint,
+.metaMusic,
+.rankingTree,
+.w3pp {
+  position: absolute;
+  top: 701px;
+  left: 1496px;
+  letter-spacing: 0.21em;
+  line-height: 156.5%;
+  display: inline-block;
+  width: 93px;
+  height: 44px;
+}
+.aslanAcademy,
+.devwiki,
+.fastDive,
+.footprint,
+.metaMusic,
+.rankingTree {
+  left: 1765px;
+  width: 198px;
+}
+.aslanAcademy,
+.devwiki,
+.fastDive,
+.metaMusic,
+.rankingTree {
+  left: 2130px;
+}
+.aslanAcademy,
+.fastDive,
+.metaMusic,
+.rankingTree {
+  top: 1081px;
+  left: 2041px;
+}
+.aslanAcademy,
+.fastDive,
+.metaMusic {
+  left: 1589px;
+}
+.aslanAcademy,
+.metaMusic {
+  left: 1176px;
+}
+.aslanAcademy {
+  top: 1082px;
+  left: 868px;
+}
+.icon,
+.icon1,
+.icon2,
+.icon3 {
+  position: absolute;
+  top: 545px;
+  left: 845px;
+  width: 291px;
+  height: 76px;
+  object-fit: cover;
+}
+.icon1,
+.icon2,
+.icon3 {
+  top: 527px;
+  left: 1228px;
+  width: 91px;
+  height: 92px;
+}
+.icon2,
+.icon3 {
+  top: 465px;
+  left: 1751px;
+  width: 223px;
+  height: 224px;
+}
+.icon3 {
+  top: 510px;
+  left: 1461px;
+  width: 162px;
+  height: 147px;
+}
+.noBgIcon {
+  top: 484px;
+  left: 197px;
+  width: 176px;
+  height: 175px;
+}
+.d3Icon,
+.icon4,
+.noBgIcon,
+.team1Ttot1Icon {
+  position: absolute;
+  object-fit: cover;
+}
+.d3Icon {
+  top: 0;
+  left: 56px;
+  width: 60px;
+  height: 50px;
+  cursor: pointer;
+}
+.icon4,
+.team1Ttot1Icon {
+  top: 496px;
+  left: 576px;
+  width: 149px;
+  height: 132px;
+}
+.team1Ttot1Icon {
+  top: 908px;
+  left: 261px;
+  width: 192px;
+  height: 125px;
+}
+.team11Cfn1Icon,
+.team12Aslanacademy1Icon {
+  position: absolute;
+  top: 914px;
+  left: 601px;
+  width: 124px;
+  height: 103px;
+  object-fit: cover;
+}
+.team12Aslanacademy1Icon {
+  top: 908px;
+  left: 909px;
+  width: 134px;
+  height: 129px;
+}
+.team13Fastdive1Icon,
+.team14Devwiki1Icon {
+  position: absolute;
+  top: 915px;
+  left: 1430px;
+  width: 476px;
+  height: 87px;
+  object-fit: cover;
+}
+.team14Devwiki1Icon {
+  top: 536px;
+  left: 2049px;
+  width: 362px;
+  height: 82px;
+}
+.team15Metamusic1Icon,
+.team17Rankingtree1Icon {
+  position: absolute;
+  top: 894px;
+  left: 1203px;
+  width: 143px;
+  height: 143px;
+  object-fit: cover;
+}
+.team17Rankingtree1Icon {
+  top: 828px;
+  left: 1906px;
+  width: 505px;
+  height: 247px;
+}
+.nametagw11Icon {
+  position: absolute;
+  bottom: 827px;
+  left: 1041px;
+  width: 526px;
+  height: 34px;
+  object-fit: cover;
+}
+.partners {
+  position: absolute;
+  top: 319px;
+  left: 1115px;
+  font-size: var(--font-size-4xl);
+  letter-spacing: 0.56em;
+  line-height: 250%;
+  text-align: left;
+  text-shadow: 2px 4px 21px #fff;
+}
+.rectangleParent {
+  position: absolute;
+  top: 35px;
+  left: -24px;
+  width: 2607px;
+  height: 1269px;
+}
+.about,
+.gallery {
+  position: absolute;
+  top: 3px;
+  right: 379px;
+  cursor: pointer;
+}
+.about {
+  right: 595px;
+}
+.roadmap {
+  right: 241px;
+  cursor: pointer;
+}
+.mint,
+.roadmap,
+.team {
+  position: absolute;
+  top: 3px;
+}
+.team {
+  right: 145px;
+  cursor: pointer;
+}
+.mint {
+  right: 505px;
+}
+.icon5 {
+  top: 0;
+  right: 68px;
+  width: 42px;
+  height: 40px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.icon5,
+.icon6,
+.menu {
+  position: absolute;
+}
+.icon6 {
+  top: 2px;
+  right: 0;
+  width: 38px;
+  height: 38px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.menu {
+  top: 35px;
+  right: 43px;
+  width: 661px;
+  height: 40px;
+  text-align: left;
+}
+.teampartners {
+  position: relative;
+  background-color: var(--color-violet-100);
+  width: 100%;
+  height: 1440px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--color-white);
+  font-family: var(--font-inder);
+}

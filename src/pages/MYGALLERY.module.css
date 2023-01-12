@@ -1,0 +1,608 @@
+.myGalleryChild {
+  position: absolute;
+  top: -230.01px;
+  left: -142.14px;
+  background-color: var(--color-violet-200);
+  width: 2031.45px;
+  height: 2978px;
+  transform: rotate(-18.97deg);
+  transform-origin: 0 0;
+}
+.myGalleryItem {
+  position: absolute;
+  top: 262px;
+  left: 46px;
+  border-radius: var(--br-2xl);
+  width: 2483px;
+  height: 1124px;
+  object-fit: cover;
+}
+.myGalleryInner {
+  position: absolute;
+  top: 2750.4px;
+  left: -742.86px;
+  width: 2587.2px;
+  height: 3458.72px;
+  transform: rotate(-90.57deg);
+  transform-origin: 0 0;
+}
+.groupChild {
+  position: absolute;
+  top: 235px;
+  left: 1202px;
+  width: 186px;
+  height: 186px;
+}
+.groupItem,
+.vectorIcon {
+  position: absolute;
+  top: 0;
+  left: 1527px;
+  width: 103px;
+  height: 103px;
+}
+.vectorIcon {
+  top: 786.98px;
+  left: 1519.27px;
+  width: 576.81px;
+  height: 583.08px;
+}
+.vectorIcon1,
+.vectorIcon2 {
+  position: absolute;
+  top: 1495.69px;
+  left: 213.04px;
+  width: 1019.16px;
+  height: 1057.48px;
+}
+.vectorIcon2 {
+  top: 181px;
+  left: 2059px;
+  width: 1076px;
+  height: 1089px;
+}
+.vectorIcon3 {
+  top: 1689.93px;
+  left: 2055.89px;
+  width: 1267.79px;
+  height: 1018.18px;
+}
+.ellipseParent,
+.vectorIcon3,
+.vectorIcon4 {
+  position: absolute;
+}
+.vectorIcon4 {
+  top: 1348.34px;
+  left: 2258.26px;
+  width: 710px;
+  height: 836.01px;
+}
+.ellipseParent {
+  top: 359px;
+  left: -359px;
+  width: 3135px;
+  height: 1689.93px;
+  display: none;
+}
+.groupInner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-lg);
+  width: 891px;
+  height: 116px;
+  object-fit: cover;
+}
+.wallet {
+  position: absolute;
+  top: 26px;
+  left: 67.68px;
+  display: inline-block;
+  width: 170.17px;
+  height: 34.33px;
+}
+.x37c74541806447e {
+  top: 20px;
+  left: 316.45px;
+  font-size: var(--font-size-5xl);
+  font-family: var(--font-inder);
+  width: 718.78px;
+  height: 44.14px;
+  position: absolute;
+  display: inline-block;
+}
+
+.lineIcon {
+  position: absolute;
+  top: 15.51px;
+  left: 283.15px;
+  width: 2px;
+  height: 74.2px;
+  object-fit: cover;
+}
+.rectangleParent {
+  position: absolute;
+  top: 315px;
+  left: 92px;
+  width: 1500px;
+  height: 103px;
+  font-size: var(--font-size-6xl);
+}
+.rectangleIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  width: 1466px;
+  height: 116px;
+  object-fit: cover;
+}
+.myNft {
+  position: absolute;
+  top: 25px;
+  left: 475.88px;
+  letter-spacing: 0.77em;
+  /* display: inline-block; */
+  width: 789.3px;
+  height: 34px;
+  font-size: 60px;
+}
+.rectangleGroup {
+  position: absolute;
+  top: 315px;
+  left: 1018px;
+  width: 1453px;
+  height: 103px;
+}
+.groupChild1,
+.icon,
+.noBgIcon {
+  position: absolute;
+  object-fit: cover;
+}
+.icon {
+  left: 150px;
+  bottom: 235px;
+  border-radius: 352.5px;
+  width: 721px;
+  height: 721px;
+}
+.noBgIcon {
+  top: 1024px;
+  left: 590px;
+  width: 90px;
+  height: 90px;
+}
+.groupChild1 {
+  top: 0;
+  left: 0;
+  border-radius: var(--br-2xs);
+  width: 570px;
+  height: 110px;
+}
+.likelionBadge {
+  position: absolute;
+  top: 22px;
+  left: 101px;
+  display: inline-block;
+  width: 355.64px;
+  height: 41.72px;
+}
+.rectangleContainer {
+  position: absolute;
+  top: 1154px;
+  left: 1799px;
+  width: 557px;
+  height: 97px;
+  font-size: var(--font-size-5xl);
+  font-family: var(--font-inder);
+}
+.dipper001 {
+  position: absolute;
+  top: 19px;
+  left: 161px;
+  display: inline-block;
+  width: 355.64px;
+  height: 41.72px;
+}
+.groupDiv {
+  position: absolute;
+  top: 1154px;
+  left: 1136px;
+  width: 557px;
+  height: 97px;
+  font-size: var(--font-size-5xl);
+  font-family: var(--font-inder);
+}
+.dIcon,
+.icon1 {
+  position: absolute;
+  object-fit: cover;
+}
+.icon1 {
+  left: 1120px;
+  bottom: 318px;
+  border-radius: var(--br-xl);
+  width: 592px;
+  height: 592px;
+}
+.dIcon {
+  top: 30px;
+  left: 32px;
+  width: 60px;
+  height: 50px;
+  display: none;
+}
+.about,
+.gallery {
+  position: absolute;
+  top: 3px;
+}
+.gallery {
+  right: 379px;
+}
+.about {
+  right: 595px;
+}
+.roadmap {
+  right: 241px;
+}
+.mint,
+.roadmap,
+.team {
+  position: absolute;
+  top: 3px;
+}
+.team {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  right: 145px;
+  font-size: var(--font-size-base);
+  font-family: var(--font-inder);
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
+}
+.mint {
+  right: 505px;
+}
+.icon2 {
+  top: 0;
+  left: 1500px;
+  width: 42px;
+  height: 40px;
+  object-fit: cover;
+}
+.icon2,
+.icon3,
+.menu {
+  position: absolute;
+}
+.icon3 {
+  top: 2px;
+  right: 0;
+  width: 38px;
+  height: 38px;
+  object-fit: cover;
+}
+.menu {
+  top: 35px;
+  right: 63px;
+  width: 661px;
+  height: 40px;
+  display: none;
+  font-size: var(--font-size-base);
+  font-family: var(--font-inder);
+}
+.groupChild3,
+.nametagwt1Icon {
+  position: absolute;
+  object-fit: cover;
+  display: none;
+}
+.groupChild3 {
+  top: 0;
+  left: -20px;
+  border-radius: var(--br-2xs);
+  width: 1549px;
+  height: 94px;
+}
+.nametagwt1Icon {
+  width: 366px;
+  height: 29px;
+}
+.gallery1,
+.rectangleParent1 {
+  position: absolute;
+  top: 136px;
+  left: 62px;
+}
+.rectangleParent1 {
+  width: 0;
+  height: 0;
+  display: none;
+}
+.gallery1 {
+  font-size: 100px;
+  letter-spacing: 0.13em;
+}
+.groupChild4 {
+  position: absolute;
+  top: -12px;
+  left: -108px;
+  border-radius: var(--br-2xs);
+  width: 1549px;
+  height: 94px;
+  object-fit: cover;
+  display: none;
+}
+.profile,
+.rectangleParent2 {
+  position: absolute;
+  top: 1222px;
+  left: 408px;
+}
+.rectangleParent2 {
+  width: 0;
+  height: 0;
+  display: none;
+}
+.profile {
+  letter-spacing: 0.13em;
+}
+.iconArrowIosBackIcon,
+.vectorIcon5 {
+  position: absolute;
+  width: 27.05px;
+  height: 47.81px;
+}
+.vectorIcon5 {
+  right: 0;
+  bottom: 0;
+}
+.iconArrowIosBackIcon {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  left: 1740px;
+  bottom: 569.19px;
+  box-shadow: 0 6px 4px rgba(0, 0, 0, 0.25);
+}
+.iconArrowIosForwardIcon,
+.vectorIcon6 {
+  position: absolute;
+  width: 27.28px;
+  height: 47.91px;
+}
+.vectorIcon6 {
+  right: 0;
+  bottom: 0;
+}
+.iconArrowIosForwardIcon {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  left: 2400px;
+  bottom: 586.12px;
+  box-shadow: 0 6px 4px rgba(0, 0, 0, 0.25);
+}
+.rectangleDiv {
+  position: absolute;
+  top: 530px;
+  left: 1790px;
+  border-radius: var(--br-xl);
+  background-color: var(--color-violet-200);
+  box-shadow: 12px 12px 4px rgba(0, 0, 0, 0.25);
+  width: 576px;
+  height: 576px;
+}
+.noBgIcon1 {
+  top: 646px;
+  left: 1913px;
+  width: 342px;
+  height: 338px;
+  object-fit: cover;
+}
+.dIcon1,
+.menu1,
+.noBgIcon1 {
+  position: absolute;
+}
+.dIcon1 {
+  top: 30px;
+  left: 32px;
+  width: 60px;
+  height: 50px;
+  object-fit: cover;
+}
+.menu1 {
+  top: 35px;
+  right: 63px;
+  width: 661px;
+  height: 40px;
+  font-size: var(--font-size-base);
+  font-family: var(--font-inder);
+}
+.myGallery {
+  position: relative;
+  background-color: var(--color-violet-100);
+  width: 100%;
+  height: 1440px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-8xl);
+  color: var(--color-white);
+  font-family: var(--font-hubballi);
+}
+.about,
+.buttonMint,
+.faq,
+.gallery,
+.mint,
+.roadmap {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+}
+.buttonMint {
+  top: 827px;
+  left: 867px;
+  width: 503px;
+  height: 108px;
+}
+.about {
+  top: 3px;
+  font-size: var(--font-size-base);
+  font-family: var(--font-inder);
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
+}
+.faq {
+  right: 156px;
+}
+.faq,
+.gallery,
+.mint,
+.roadmap {
+  top: 3px;
+  font-size: var(--font-size-base);
+  font-family: var(--font-inder);
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
+}
+.roadmap {
+  right: 241px;
+}
+.gallery {
+  right: 379px;
+}
+.mint {
+  right: 505px;
+}
+.about {
+  right: 595px;
+}
+.iconDiscord,
+.iconTwitter {
+  text-decoration: none;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  cursor: pointer;
+}
+.iconTwitter {
+  top: 2px;
+  right: 0;
+  width: 38px;
+  height: 38px;
+  background-image: url(../../public/icon-twitter@3x.png);
+}
+.iconDiscord {
+  top: 0;
+  right: 68px;
+  width: 42px;
+  height: 40px;
+  background-image: url(../../public/icon-discord@3x.png);
+}
+.iconLogo,
+.navbar {
+  position: absolute;
+  height: 50px;
+}
+
+.navbar {
+  top: 35px;
+  right: 43px;
+  width: 1365px;
+}
+
+.iconLogo {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  background-image: url(../../public/d1@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  top: 35px;
+  left: 32px;
+  width: 60px;
+  height: 50px;
+  cursor: pointer;
+  position: absolute;
+  object-fit: cover;
+}
+.navbar {
+  top: 35px;
+  right: 43px;
+  width: 1365px;
+  position: absolute;
+  height: 50px;
+}
+
+.iconDiscord,
+.iconTwitter {
+  text-decoration: none;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  cursor: pointer;
+}
+.iconTwitter {
+  top: 2px;
+  right: 0;
+  width: 38px;
+  height: 38px;
+  background-image: url(../../public/icon-twitter@3x.png);
+}
+.iconDiscord {
+  top: 0;
+  right: 68px;
+  width: 42px;
+  height: 40px;
+  background-image: url(../../public/icon-discord@3x.png);
+}
+.about,
+.team,
+.gallery,
+.mint,
+.roadmap {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 3px;
+  font-size: var(--font-size-base);
+  font-family: var(--font-inder);
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
+}
+.team {
+  right: 156px;
+}
+.roadmap {
+  right: 241px;
+}
+.gallery {
+  right: 379px;
+}
+.mint {
+  right: 505px;
+}
+.about {
+  right: 595px;
+}

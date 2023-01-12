@@ -570,3 +570,83 @@
 .mySwiper {
   height: 100%;
 }
+.iconLogo {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  background-image: url(../../public/d1@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  top: 35px;
+  left: 32px;
+  width: 60px;
+  height: 50px;
+  cursor: pointer;
+  position: absolute;
+  object-fit: cover;
+}
+.navbar {
+  top: 35px;
+  right: 43px;
+  width: 1365px;
+  position: absolute;
+  height: 50px;
+}
+
+.iconDiscord,
+.iconTwitter {
+  text-decoration: none;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  cursor: pointer;
+}
+.iconTwitter {
+  top: 2px;
+  right: 0;
+  width: 38px;
+  height: 38px;
+  background-image: url(../../public/icon-twitter@3x.png);
+}
+.iconDiscord {
+  top: 0;
+  right: 68px;
+  width: 42px;
+  height: 40px;
+  background-image: url(../../public/icon-discord@3x.png);
+}
+.about,
+.team,
+.gallery,
+.mint,
+.roadmap {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 3px;
+  font-size: var(--font-size-base);
+  font-family: var(--font-inder);
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
+}
+.team {
+  right: 156px;
+}
+.roadmap {
+  right: 241px;
+}
+.gallery {
+  right: 379px;
+}
+.mint {
+  right: 505px;
+}
+.about {
+  right: 595px;
+}

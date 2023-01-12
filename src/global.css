@@ -19,7 +19,9 @@ body {
   --font-size-4xl: 35px;
   --font-size-5xl: 45px;
   --font-size-6xl: 58px;
-
+  --font-size-7xl: 58px;
+  --font-size-8xl: 60px;
+  --font-size-9xl: 628px;
   /* Colors */
   --color-violet-100: #90a8ff;
   --color-violet-200: #717cf3;

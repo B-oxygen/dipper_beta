@@ -1,0 +1,292 @@
+.nametagwt1Icon {
+  position: absolute;
+  top: 1360px;
+  left: 1387px;
+  width: 195px;
+  height: 16px;
+  object-fit: cover;
+}
+.roadmapChild,
+.sku1Icon {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  height: 1440px;
+}
+.sku1Icon {
+  left: 0;
+  width: 2560px;
+}
+.roadmapChild {
+  left: 7px;
+  width: 2578px;
+}
+.kPop {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.ip {
+  margin: 0;
+}
+.kPopContainer {
+  position: absolute;
+  top: 475px;
+  left: 89px;
+  line-height: 250%;
+  text-align: center;
+  display: inline-block;
+  width: 2387px;
+  height: 535px;
+}
+.dipperx2Icon {
+  position: absolute;
+  top: 220px;
+  left: 1143px;
+  width: 273px;
+  height: 99px;
+  object-fit: cover;
+}
+.roadMap {
+  position: absolute;
+  top: 330px;
+  left: 889px;
+  font-size: var(--font-size-7xl);
+  letter-spacing: 1.21em;
+  line-height: 250%;
+  text-shadow: 2px 4px 21px #fff;
+}
+.groupChild,
+.nametagw5Icon {
+  position: absolute;
+  object-fit: cover;
+}
+.nametagw5Icon {
+  bottom: 466px;
+  left: -46px;
+  width: 559px;
+  height: 126px;
+}
+.groupChild {
+  top: 45px;
+  left: -2px;
+  border-radius: var(--br-sm);
+  width: 455px;
+  height: 531px;
+}
+.nametagw5Parent {
+  position: absolute;
+  bottom: 120px;
+  left: 181px;
+  width: 467px;
+  height: 546px;
+}
+.groupItem {
+  position: absolute;
+  top: 45px;
+  left: -5px;
+  border-radius: var(--br-sm);
+  width: 455px;
+  height: 531px;
+  object-fit: cover;
+}
+.nametagw6Parent,
+.nametagw7Parent {
+  position: absolute;
+  bottom: 120px;
+  left: 623px;
+  width: 467px;
+  height: 546px;
+}
+.nametagw7Parent {
+  left: 1062px;
+}
+.rectangleIcon {
+  position: absolute;
+  top: 45px;
+  left: -4px;
+  border-radius: var(--br-sm);
+  width: 455px;
+  height: 531px;
+  object-fit: cover;
+}
+.nametagw9Parent {
+  position: absolute;
+  bottom: 120px;
+  left: 1940px;
+  width: 467px;
+  height: 546px;
+}
+.groupChild1 {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  border-radius: var(--br-sm);
+  width: 455px;
+  height: 531px;
+  object-fit: cover;
+}
+.nametagw8Parent {
+  position: absolute;
+  bottom: 120px;
+  left: 1499px;
+  width: 467px;
+  height: 546px;
+}
+.faq {
+  position: absolute;
+  right: 156px;
+  cursor: pointer;
+}
+.about,
+.faq,
+.gallery {
+  top: 3px;
+}
+.about,
+.gallery,
+.icon,
+.icon1,
+.mint,
+.roadmap1 {
+  position: absolute;
+  cursor: pointer;
+}
+.mint,
+.roadmap1 {
+  top: 3px;
+}
+.roadmap1 {
+  right: 241px;
+}
+.gallery {
+  right: 379px;
+}
+.mint {
+  right: 505px;
+}
+.about {
+  right: 595px;
+}
+.icon,
+.icon1 {
+  top: 0;
+  right: 68px;
+  width: 42px;
+  height: 40px;
+  object-fit: cover;
+}
+.icon1 {
+  top: 2px;
+  right: 0;
+  width: 38px;
+  height: 38px;
+}
+.d2Icon,
+.menu {
+  position: absolute;
+  top: 35px;
+}
+.menu {
+  right: 43px;
+  width: 661px;
+  height: 40px;
+  font-size: var(--font-size-base);
+}
+.d2Icon {
+  left: 32px;
+  width: 60px;
+  height: 50px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.roadmapWrapper {
+  position: relative;
+  background-color: var(--color-violet-100);
+  width: 100%;
+  height: 1440px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--color-white);
+  font-family: var(--font-inder);
+}
+.iconLogo {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  background-image: url(../../public/d1@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  top: 35px;
+  left: 32px;
+  width: 60px;
+  height: 50px;
+  cursor: pointer;
+  position: absolute;
+  object-fit: cover;
+}
+.navbar {
+  top: 35px;
+  right: 43px;
+  width: 1365px;
+  position: absolute;
+  height: 50px;
+}
+
+.iconDiscord,
+.iconTwitter {
+  text-decoration: none;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  cursor: pointer;
+}
+.iconTwitter {
+  top: 2px;
+  right: 0;
+  width: 38px;
+  height: 38px;
+  background-image: url(../../public/icon-twitter@3x.png);
+}
+.iconDiscord {
+  top: 0;
+  right: 68px;
+  width: 42px;
+  height: 40px;
+  background-image: url(../../public/icon-discord@3x.png);
+}
+.about,
+.team,
+.gallery,
+.mint,
+.roadmap {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 3px;
+  font-size: var(--font-size-base);
+  font-family: var(--font-inder);
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
+}
+.team {
+  right: 156px;
+}
+.roadmap {
+  right: 241px;
+}
+.gallery {
+  right: 379px;
+}
+.mint {
+  right: 505px;
+}
+.about {
+  right: 595px;
+}

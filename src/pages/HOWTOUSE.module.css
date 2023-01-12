@@ -1,0 +1,328 @@
+.groupChild {
+  position: absolute;
+  top: 235px;
+  left: 1202px;
+  width: 186px;
+  height: 186px;
+}
+.groupItem,
+.vectorIcon {
+  position: absolute;
+  top: 0;
+  left: 1527px;
+  width: 103px;
+  height: 103px;
+}
+.vectorIcon {
+  top: 192.89px;
+  left: 1470.59px;
+  width: 587.66px;
+  height: 558.58px;
+}
+.vectorIcon1,
+.vectorIcon2 {
+  position: absolute;
+  top: 348.75px;
+  left: 359px;
+  width: 818.61px;
+  height: 732.25px;
+}
+.vectorIcon2 {
+  top: 181px;
+  left: 2059px;
+  width: 1076px;
+  height: 1089px;
+}
+.vectorIcon3,
+.vectorIcon4 {
+  position: absolute;
+  top: 456.23px;
+  left: 919.14px;
+  width: 1181.23px;
+  height: 624.77px;
+}
+.vectorIcon4 {
+  top: 668.24px;
+  left: 1608.12px;
+  width: 705.62px;
+  height: 412.76px;
+}
+.ellipseParent,
+.howtouseChild {
+  position: absolute;
+  top: 359px;
+  left: -359px;
+  width: 3135px;
+  height: 1561.93px;
+}
+.howtouseChild {
+  top: 0;
+  left: 0;
+  width: 1156.07px;
+  height: 1440px;
+  object-fit: cover;
+}
+.icon,
+.icon1,
+.icon2 {
+  border-radius: var(--br-3xl);
+  width: 500px;
+  height: 500px;
+}
+.icon {
+  position: absolute;
+  top: 248px;
+  left: 1423px;
+  object-fit: cover;
+}
+.icon1,
+.icon2 {
+  left: 1922px;
+}
+.icon1 {
+  position: absolute;
+  top: 248px;
+  object-fit: cover;
+}
+.icon2 {
+  top: 748px;
+}
+.icon2,
+.icon3,
+.nametagwt1Icon {
+  position: absolute;
+  object-fit: cover;
+}
+.icon3 {
+  top: 748px;
+  left: 1423px;
+  border-radius: var(--br-3xl);
+  width: 500px;
+  height: 500px;
+}
+.nametagwt1Icon {
+  top: 63px;
+  left: 0;
+  width: 195px;
+  height: 16px;
+}
+.back {
+  position: absolute;
+  top: 0;
+  left: 32px;
+  font-size: var(--font-size-3xl);
+  letter-spacing: 0.23em;
+  line-height: 250%;
+  font-family: var(--font-inder);
+  color: var(--color-white);
+  text-align: left;
+}
+.nametagwt1Parent {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 1092px;
+  left: 0;
+  width: 195px;
+  height: 88px;
+}
+.kPop {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.web30 {
+  margin: 0;
+}
+.kPopContainer {
+  position: absolute;
+  top: 250px;
+  left: 17px;
+  line-height: 250%;
+}
+.nametagw5Icon {
+  position: absolute;
+  bottom: 1035.28px;
+  left: 17px;
+  width: 436.02px;
+  height: 30.72px;
+  object-fit: cover;
+}
+.ustomizing {
+  font-size: var(--font-size-5xl);
+}
+.customizing {
+  position: absolute;
+  top: 0;
+  left: 26px;
+  letter-spacing: 0.23em;
+  line-height: 250%;
+  font-size: var(--font-size-7xl);
+}
+.groupParent {
+  position: absolute;
+  top: 190px;
+  left: 53px;
+  width: 648px;
+  height: 1180px;
+}
+.faq {
+  position: absolute;
+  right: 156px;
+  cursor: pointer;
+}
+.about,
+.faq,
+.gallery {
+  top: 3px;
+}
+.about,
+.gallery,
+.icon4,
+.icon5,
+.mint,
+.roadmap {
+  position: absolute;
+  cursor: pointer;
+}
+.mint,
+.roadmap {
+  top: 3px;
+}
+.roadmap {
+  right: 241px;
+}
+.gallery {
+  right: 379px;
+}
+.mint {
+  right: 505px;
+}
+.about {
+  right: 595px;
+}
+.icon4,
+.icon5 {
+  top: 0;
+  right: 68px;
+  width: 42px;
+  height: 40px;
+  object-fit: cover;
+}
+.icon5 {
+  top: 2px;
+  right: 0;
+  width: 38px;
+  height: 38px;
+}
+.d2Icon,
+.menu {
+  position: absolute;
+  top: 35px;
+}
+.menu {
+  right: 43px;
+  width: 661px;
+  height: 40px;
+  font-size: var(--font-size-base);
+}
+.d2Icon {
+  left: 32px;
+  width: 60px;
+  height: 50px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.howtouse {
+  position: relative;
+  background-color: var(--color-violet-100);
+  width: 100%;
+  height: 1440px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--color-white);
+  font-family: var(--font-inder);
+}
+
+.iconLogo {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  background-image: url(../../public/d1@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  top: 35px;
+  left: 32px;
+  width: 60px;
+  height: 50px;
+  cursor: pointer;
+  position: absolute;
+  object-fit: cover;
+}
+.navbar {
+  top: 35px;
+  right: 43px;
+  width: 1365px;
+  position: absolute;
+  height: 50px;
+}
+
+.iconDiscord,
+.iconTwitter {
+  text-decoration: none;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  cursor: pointer;
+}
+.iconTwitter {
+  top: 2px;
+  right: 0;
+  width: 38px;
+  height: 38px;
+  background-image: url(../../public/icon-twitter@3x.png);
+}
+.iconDiscord {
+  top: 0;
+  right: 68px;
+  width: 42px;
+  height: 40px;
+  background-image: url(../../public/icon-discord@3x.png);
+}
+.about,
+.team,
+.gallery,
+.mint,
+.roadmap {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 3px;
+  font-size: var(--font-size-base);
+  font-family: var(--font-inder);
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
+}
+.team {
+  right: 156px;
+}
+.roadmap {
+  right: 241px;
+}
+.gallery {
+  right: 379px;
+}
+.mint {
+  right: 505px;
+}
+.about {
+  right: 595px;
+}

@@ -7,13 +7,19 @@ import {
 import { useEffect } from "react";
 
 import MAIN from "./pages/MAIN";
+
 import MINTCONNECTWALLET from "./pages/MINTCONNECTWALLET";
 import MINT2 from "./pages/MINT2";
+import RESULTPAGE from "./pages/RESULTPAGE";
+
+import GALLERY from "./pages/GALLERYCONNECTWALLET";
+import MYGALLERY from "./pages/MYGALLERY";
+
 import ABOUT from "./pages/ABOUT";
-import GALLERY from "./pages/Gallery";
-import MyGALLERY from "./pages/MyGALLERY";
-import CUSTOMIZNG from "./pages/CUSTOMIZNG";
-import FAQ from "./pages/FAQ";
+import HOWTOUSE from "./pages/HOWTOUSE";
+import ROADMAP from "./pages/ROADMAP";
+import TEAM from "./pages/TEAM";
+import PARTNERS from "./pages/PARTNERS";
 
 function App() {
   const action = useNavigationType();
@@ -35,6 +41,7 @@ function App() {
         title = "";
         metaDescription = "";
         break;
+
       case "/mintconnect-wallet":
         title = "";
         metaDescription = "";
@@ -43,24 +50,38 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/gallery":
+      case "/result-page":
         title = "";
         metaDescription = "";
         break;
 
+      case "/gallery":
+        title = "";
+        metaDescription = "";
+        break;
       case "/my-gallery":
         title = "";
         metaDescription = "";
         break;
+
       case "/about":
         title = "";
         metaDescription = "";
         break;
-      case "/customizng":
+      case "/howtouse":
         title = "";
         metaDescription = "";
         break;
-      case "/faq":
+
+      case "/roadmap":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/team":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/partners":
         title = "";
         metaDescription = "";
         break;
@@ -85,18 +106,18 @@ function App() {
       <Route path="/" element={<MAIN />} />
 
       <Route path="/mintconnect-wallet" element={<MINTCONNECTWALLET />} />
-
       <Route path="/mint2" element={<MINT2 />} />
-
-      <Route path="/about" element={<ABOUT />} />
+      <Route path="/result-page" element={<RESULTPAGE />} />
 
       <Route path="/gallery" element={<GALLERY />} />
+      <Route path="/my-gallery" element={<MYGALLERY />} />
 
-      <Route path="/my-gallery" element={<MyGALLERY />} />
+      <Route path="/about" element={<ABOUT />} />
+      <Route path="/howtouse" element={<HOWTOUSE />} />
 
-      <Route path="/customizng" element={<CUSTOMIZNG />} />
-
-      <Route path="/faq" element={<FAQ />} />
+      <Route path="/roadmap" element={<ROADMAP />} />
+      <Route path="/team" element={<TEAM />} />
+      <Route path="/partners" element={<PARTNERS />} />
     </Routes>
   );
 }

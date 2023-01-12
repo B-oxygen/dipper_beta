@@ -10,32 +10,41 @@
   position: absolute;
   top: 0;
   left: 32px;
-  font-size: var(--font-size-4xl);
+  font-size: var(--font-size-3xl);
   letter-spacing: 0.23em;
   line-height: 250%;
   font-family: var(--font-inder);
   color: var(--color-white);
   text-align: left;
 }
-.buttonNext {
+.nametagwt1Parent {
   cursor: pointer;
   border: 0;
   padding: 0;
   background-color: transparent;
   position: absolute;
-  top: 885px;
-  left: 802px;
+  top: 1297px;
+  left: 1387px;
   width: 195px;
   height: 88px;
-  z-index: 2;
+  z-index: 1;
 }
+.character1Icon,
 .sku1Icon {
   position: absolute;
-  top: 48px;
-  left: 771px;
-  width: 884px;
-  height: 947px;
   object-fit: cover;
+}
+.sku1Icon {
+  top: 0;
+  left: 1229px;
+  width: 1869px;
+  height: 2002px;
+}
+.character1Icon {
+  top: 678px;
+  left: 1743px;
+  width: 673px;
+  height: 700px;
 }
 .kPop {
   margin-block-start: 0;
@@ -46,80 +55,118 @@
 }
 .kPopContainer {
   position: absolute;
-  top: 370px;
-  left: 0;
+  top: 691px;
+  left: 92px;
   line-height: 250%;
+  display: inline-block;
+  width: 1092px;
+  height: 535px;
 }
+
 .dipperx2Icon {
+  top: 397px;
+  left: 92px;
+  width: 526px;
+  height: 190px;
   position: absolute;
-  top: 161px;
-  left: 0;
-  width: 390px;
-  height: 141px;
   object-fit: cover;
 }
-.bout {
-  font-size: var(--font-size-5xl);
-}
-.about1 {
+.d2Icon {
+  top: 35px;
+  left: 32px;
+  width: 60px;
+  height: 50px;
+  cursor: pointer;
   position: absolute;
-  top: 0;
-  left: 0;
-  letter-spacing: 0.23em;
-  line-height: 250%;
+  object-fit: cover;
+}
+
+.a {
+  font-size: var(--font-size-8xl);
+}
+.bout {
   font-size: var(--font-size-6xl);
 }
-.contentsAbout {
+
+.about1 {
   position: absolute;
-  top: 142px;
-  left: 74px;
-  width: 1655px;
-  height: 995px;
+  top: 154px;
+  left: 111px;
+  letter-spacing: 0.23em;
+  line-height: 250%;
+  font-size: var(--font-size-7xl);
+}
+.nametagw5Icon {
+  position: absolute;
+  bottom: 1146px;
+  left: 92px;
+  width: 347px;
+  height: 25px;
+  object-fit: cover;
 }
 .about2 {
+  position: absolute;
+  top: 3px;
+  cursor: pointer;
+}
+
+.icon,
+.icon1,
+.menu {
+  position: absolute;
+}
+.icon1 {
+  top: 2px;
+  right: 0;
+  width: 38px;
+  height: 38px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.menu {
+  top: 35px;
+  right: 43px;
+  width: 661px;
+  height: 40px;
+  font-size: var(--font-size-base);
+}
+.aboutWrapper {
+  position: relative;
+  background-color: var(--color-violet-100);
+  width: 100%;
+  height: 1440px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--color-white);
+  font-family: var(--font-inder);
+}
+
+.iconLogo {
   cursor: pointer;
   border: 0;
   padding: 0;
   background-color: transparent;
-  position: absolute;
-  top: 3px;
-  font-size: var(--font-size-base);
-  font-family: var(--font-inder);
-  color: var(--color-white);
-  text-align: left;
-  display: inline-block;
-}
-.faq {
-  right: 156px;
-}
-.faq,
-.gallery,
-.mint,
-.roadmap {
+  background-image: url(../../public/d1@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  top: 35px;
+  left: 32px;
+  width: 60px;
+  height: 50px;
   cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
   position: absolute;
-  top: 3px;
-  font-size: var(--font-size-base);
-  font-family: var(--font-inder);
-  color: var(--color-white);
-  text-align: left;
-  display: inline-block;
+  object-fit: cover;
 }
-.roadmap {
-  right: 241px;
+.navbar {
+  top: 35px;
+  right: 43px;
+  width: 1365px;
+  position: absolute;
+  height: 50px;
 }
-.gallery {
-  right: 379px;
-}
-.mint {
-  right: 505px;
-}
-.about2 {
-  right: 595px;
-}
+
 .iconDiscord,
 .iconTwitter {
   text-decoration: none;
@@ -143,37 +190,35 @@
   height: 40px;
   background-image: url(../../public/icon-discord@3x.png);
 }
-.iconLogo,
-.navbar {
-  position: absolute;
-  height: 50px;
-}
-.iconLogo {
+.about,
+.team,
+.gallery,
+.mint,
+.roadmap {
   cursor: pointer;
   border: 0;
   padding: 0;
   background-color: transparent;
-  top: 0;
-  left: 0;
-  width: 60px;
-  background-image: url(../../public/d1@3x.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
+  position: absolute;
+  top: 3px;
+  font-size: var(--font-size-base);
+  font-family: var(--font-inder);
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
 }
-.navbar {
-  top: 35px;
-  right: 43px;
-  width: 1365px;
+.team {
+  right: 156px;
+}
+.roadmap {
+  right: 241px;
+}
+.gallery {
+  right: 379px;
+}
+.mint {
+  right: 505px;
 }
 .about {
-  position: relative;
-  background-color: var(--color-violet-100);
-  width: 100%;
-  height: 1024px;
-  overflow: hidden;
-  text-align: left;
-  font-size: var(--font-size-lg);
-  color: var(--color-white);
-  font-family: var(--font-inder);
+  right: 595px;
 }
