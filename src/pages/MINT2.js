@@ -26,6 +26,11 @@ const MINT2 = () => {
 
   const navigate = useNavigate();
   const swiperRef = useRef(null);
+
+  const navigatetoMyGallery = () => {
+    navigate("/my-gallery");
+  };
+
   const onFAQClick = useCallback(() => {
     navigate("/faq");
   }, [navigate]);
@@ -267,7 +272,12 @@ const MINT2 = () => {
       </div>
       <button className={styles.buttonMint} autoFocus>
         <div className={styles.buttonMintChild} id="MintButton" />
-        <div className={styles.mintNow} onClick={onMintNowClick}>
+        <div
+          className={styles.mintNow}
+          onClick={() => {
+            navigatetoMyGallery();
+          }}
+        >
           MINT NOW
         </div>
       </button>
