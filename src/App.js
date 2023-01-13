@@ -12,7 +12,7 @@ import MINTCONNECTWALLET from "./pages/MINTCONNECTWALLET";
 import MINT2 from "./pages/MINT2";
 import RESULTPAGE from "./pages/RESULTPAGE";
 
-import GALLERY from "./pages/GALLERYCONNECTWALLET";
+import GALLERYCONNECTWALLET from "./pages/GALLERYCONNECTWALLET";
 import MYGALLERY from "./pages/MYGALLERY";
 
 import ABOUT from "./pages/ABOUT";
@@ -109,7 +109,7 @@ function App() {
       <Route path="/mint2" element={<MINT2 />} />
       <Route path="/result-page" element={<RESULTPAGE />} />
 
-      <Route path="/gallery" element={<GALLERY />} />
+      <Route path="/gallery" element={<GALLERYCONNECTWALLET />} />
       <Route path="/my-gallery" element={<MYGALLERY />} />
 
       <Route path="/about" element={<ABOUT />} />
