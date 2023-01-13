@@ -41,6 +41,7 @@ const ABOUT = () => {
     navigate("/howtouse");
   }, []);
 
+  const a = a;
   return (
     <div className={styles.aboutWrapper}>
       <div className={styles.about1}>
