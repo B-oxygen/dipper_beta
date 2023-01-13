@@ -21,8 +21,6 @@ import ROADMAP from "./pages/ROADMAP";
 import TEAM from "./pages/TEAM";
 import PARTNERS from "./pages/PARTNERS";
 
-import SHOWRESULTS from "./pages/showresult";
-
 function App() {
   const action = useNavigationType();
   const location = useLocation();
@@ -87,11 +85,6 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-
-      case "/showresults":
-        title = "";
-        metaDescription = "";
-        break;
     }
 
     if (title) {
@@ -111,18 +104,20 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<MAIN />} />
+
       <Route path="/mintconnect-wallet" element={<MINTCONNECTWALLET />} />
       <Route path="/mint2" element={<MINT2 />} />
       <Route path="/result-page" element={<RESULTPAGE />} />
+
       <Route path="/gallery" element={<GALLERYCONNECTWALLET />} />
       <Route path="/my-gallery" element={<MYGALLERY />} />
+
       <Route path="/about" element={<ABOUT />} />
       <Route path="/howtouse" element={<HOWTOUSE />} />
+
       <Route path="/roadmap" element={<ROADMAP />} />
       <Route path="/team" element={<TEAM />} />
       <Route path="/partners" element={<PARTNERS />} />
-
-      <Route path="/showresults" element={<SHOWRESULTS />} />
     </Routes>
   );
 }

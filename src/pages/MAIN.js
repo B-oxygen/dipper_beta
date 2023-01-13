@@ -29,10 +29,6 @@ const MAIN = () => {
     navigate("/team");
   }, []);
 
-  const onResultsClick = useCallback(() => {
-    navigate("/showresults");
-  }, []);
-
   const onIconTwitterClick = useCallback(() => {
     window.open("https://twitter.com/home?lang=ko");
   }, []);
@@ -54,7 +50,7 @@ const MAIN = () => {
         alt=""
         src="../character_main@1x.png"
       />
-      <button onClick={onResultsClick}></button>
+
       <button className={styles.iconLogo} autoFocus onClick={onLOGOClick} />
       <div className={styles.navbar} id="navBar">
         <button className={styles.about} autoFocus onClick={onABOUTClick}>
