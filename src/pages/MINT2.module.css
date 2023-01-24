@@ -24,11 +24,12 @@
 }
 .reactColor {
   top: 70px;
-  left: 88px;
+  left: 24%;
   border-radius: var(--br-lg);
   background-color: #ffdb6d;
-  width: 195px;
+  width: 50%;
   height: 195px;
+  cursor: pointer;
 }
 .backgroundcolorInner,
 .backgroundcolorItem {
@@ -61,27 +62,27 @@
   box-shadow: 9px 9px 4px rgba(0, 0, 0, 0.25);
   height: 142px;
 }
-.skin1 {
+.skinText {
   position: absolute;
   top: 16px;
   left: 158px;
 }
-.ellipseIcon,
-.skinInner,
-.skinItem {
+.skin3,
+.skin2,
+.skin1 {
   position: absolute;
   top: 66px;
   width: 53px;
   height: 53px;
   cursor: pointer;
 }
-.skinItem {
+.skin1 {
   left: 61px;
 }
-.skinInner {
+.skin2 {
   left: 155px;
 }
-.ellipseIcon {
+.skin3 {
   left: 249px;
 }
 .eyesChild,
@@ -110,8 +111,7 @@
   height: 26px;
   object-fit: cover;
 }
-.eyes1,
-.eyesItem {
+.eyesText {
   position: absolute;
   top: 18px;
   left: 155px;
@@ -123,6 +123,7 @@
   background-color: var(--color-gray-200);
   width: 211px;
   height: 60px;
+  position: relative;
 }
 .eyesInner,
 .polygonIcon {
@@ -136,13 +137,14 @@
 .polygonIcon {
   left: 315.5px;
 }
-.icon {
-  position: absolute;
-  top: 62px;
-  left: 92px;
-  width: 180px;
-  height: 75px;
+
+.eyes1 {
+  top: -30%;
+  left: 2%;
+  width: 100%;
   object-fit: cover;
+  position: absolute;
+  cursor: pointer;
 }
 .eyes,
 .nametagw4Icon {
@@ -159,8 +161,7 @@
   height: 26px;
   object-fit: cover;
 }
-.brows,
-.eyebrowsItem {
+.brows {
   position: absolute;
   top: 22px;
   left: 135px;
@@ -169,10 +170,12 @@
   top: 81px;
   left: 76px;
   border-radius: var(--br-xl);
+  background-color: var(--color-gray-200);
   width: 211px;
   height: 60px;
-  object-fit: cover;
+  position: relative;
 }
+
 .eyebrowsChild1,
 .eyebrowsInner {
   position: absolute;
@@ -187,14 +190,17 @@
 .eyebrowsChild1 {
   left: 31px;
 }
-.icon1 {
-  position: absolute;
-  top: 66px;
-  left: 71px;
-  width: 234px;
-  height: 94px;
+.eyebrows1,
+.eyebrows2,
+.eyebrows3 {
+  top: -15%;
+  left: 3%;
+  width: 100%;
   object-fit: cover;
+  position: absolute;
+  cursor: pointer;
 }
+
 .clothesChild,
 .eyebrows {
   position: absolute;
@@ -205,6 +211,14 @@
   left: 445px;
   height: 160px;
 }
+
+.clothes {
+  position: absolute;
+  bottom: 67px;
+  left: 54px;
+  width: 368px;
+  height: 368px;
+}
 .clothesChild {
   bottom: 0;
   left: 2px;
@@ -213,16 +227,8 @@
   box-shadow: 9px 9px 4px rgba(0, 0, 0, 0.25);
   height: 368px;
 }
-.clothesItem {
-  position: absolute;
-  bottom: 69px;
-  left: 21px;
-  border-radius: var(--br-sm);
-  background-color: var(--color-gray-200);
-  width: 326px;
-  height: 231px;
-}
-.clothes1 {
+
+.clothesText {
   position: absolute;
   bottom: 327px;
   left: 125px;
@@ -230,46 +236,32 @@
   width: 118px;
   height: 26px;
 }
-.icon2,
-.nametagw6Icon {
-  position: absolute;
-  top: 82px;
-  left: 0;
-  width: 368px;
-  height: 191px;
-  object-fit: cover;
-}
 .nametagw6Icon {
   top: 38px;
   left: 21px;
   width: 326px;
   height: 26px;
-}
-.clothesChild1,
-.clothesChild2,
-.clothesInner {
   position: absolute;
-  top: 317px;
-  width: 35px;
-  height: 35px;
+}
+
+.clothesItem {
+  position: absolute;
+  top: 20%;
+  left: 8%;
+  border-radius: var(--br-sm);
+  background-color: var(--color-gray-200);
+  width: 315px;
+  height: 265px;
+}
+.clothes1 {
+  top: 15%;
+  left: 1%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
   cursor: pointer;
 }
-.clothesInner {
-  left: 107px;
-}
-.clothesChild1 {
-  left: 166px;
-}
-.clothesChild2 {
-  left: 225px;
-}
-.clothes {
-  position: absolute;
-  bottom: 67px;
-  left: 54px;
-  width: 368px;
-  height: 368px;
-}
+
 .hairChild {
   position: absolute;
   top: 0;
@@ -280,62 +272,36 @@
   width: 364px;
   height: 439px;
 }
-.hairItem {
-  top: 81px;
-  left: 76px;
-  border-radius: 26px;
-  background-color: var(--color-gray-200);
-  width: 211px;
-  height: 276px;
-  position: relative;
-}
 
 .hairText {
   top: 19px;
-  left: 151px;
+  left: 157px;
   position: absolute;
 }
-.hairChild1,
-.hairInner {
+
+.hairButtonNext {
+  top: 206.95px;
+  left: 315.5px;
   position: absolute;
   width: 16.5px;
   height: 38.11px;
   cursor: pointer;
 }
-.hairInner {
-  top: 206.95px;
-  left: 315.5px;
-}
-.hairChild1 {
+.hairButtonPrev {
   top: 207.95px;
   left: 31px;
-}
-.hairChild2 {
-  left: 105px;
-}
-.hairChild2,
-.hairChild3,
-.hairChild4 {
   position: absolute;
-  top: 375px;
-  width: 35px;
-  height: 35px;
+  width: 16.5px;
+  height: 38.11px;
   cursor: pointer;
 }
-.hairChild3 {
-  left: 164px;
-}
-.hairChild4 {
-  left: 223px;
-}
-.hair {
-  position: absolute;
-}
+
 .hair {
   top: 134px;
   left: 56px;
   width: 364px;
   height: 439px;
+  position: absolute;
 }
 
 .nametagwt1Icon {
@@ -387,6 +353,7 @@
   color: var(--color-white);
   text-align: left;
 }
+
 .about,
 .buttonMint,
 .faq,
@@ -501,34 +468,25 @@
   height: 1024px;
 }
 
-.hair1 {
-  top: 0px;
-  width: 100%;
-  object-fit: cover;
-  position: absolute;
+.hairItem {
+  top: 81px;
+  left: 72px;
+  border-radius: 26px;
+  background-color: var(--color-gray-200);
+  width: 224px;
+  height: 314px;
+  position: relative;
 }
-.hair2 {
-  top: 0px;
-  width: 100%;
-  object-fit: cover;
-  position: absolute;
-}
-.hair3 {
-  top: 0px;
-  width: 100%;
-  object-fit: cover;
-  position: absolute;
-}
+.hair1,
+.hair2,
+.hair3,
 .hair4 {
-  top: 0px;
-  width: 100%;
+  top: 10%;
+  left: 8%;
+  width: 90%;
   object-fit: cover;
   position: absolute;
-}
-.hair5 {
-  top: 0px;
-  width: 100%;
-  object-fit: cover;
+  cursor: pointer;
 }
 
 .backgroundColorSort,
