@@ -69,14 +69,12 @@ const MINT2 = () => {
     <div className={styles.mint2}>
       <div className={styles.hair} id="HAIR">
         <div className={styles.hairChild} />
-
         <div className={styles.hairText}>HAIR</div>
         <img
           className={styles.nametagw4Icon}
           alt=""
           src="../nametagw-7@1x.png"
         />
-
         <div className={styles.hairItem}>
           <Swiper
             pagination={{
@@ -93,7 +91,7 @@ const MINT2 = () => {
               <img
                 className={styles.hair1}
                 alt=""
-                src="../hair_1@1x.png"
+                src="https://iili.io/H0mwxhF.png"
                 onClick={() => {
                   setHairSort("https://iili.io/HT56Ksn.png");
                 }}
@@ -103,7 +101,7 @@ const MINT2 = () => {
               <img
                 className={styles.hair2}
                 alt=""
-                src="../hair_1@1x.png"
+                src="https://iili.io/H0mwzLg.png"
                 onClick={() => {
                   setHairSort("https://iili.io/HT56B0G.png");
                 }}
@@ -113,7 +111,7 @@ const MINT2 = () => {
               <img
                 className={styles.hair3}
                 alt=""
-                src="../hair_1@1x.png"
+                src="https://iili.io/H0mwuEJ.png"
                 onClick={() => {
                   setHairSort("https://iili.io/HT56Cgf.png");
                 }}
@@ -123,7 +121,7 @@ const MINT2 = () => {
               <img
                 className={styles.hair4}
                 alt=""
-                src="../hair_1@1x.png"
+                src="https://iili.io/H0mwTBa.png"
                 onClick={() => {
                   setHairSort("https://iili.io/HT56x5l.png");
                 }}
@@ -145,7 +143,6 @@ const MINT2 = () => {
           onClick={() => hairSwiperRef.current?.slideNext()}
         />
       </div>
-
       <div className={styles.clothes} id="Clothes">
         <div className={styles.clothesChild} />
 
@@ -172,7 +169,7 @@ const MINT2 = () => {
               <img
                 className={styles.clothes1}
                 alt=""
-                src="../clothes@2x.png"
+                src="https://iili.io/H0mwCmP.png"
                 onClick={() => {
                   setClothesSort("https://iili.io/HT56agj.png");
                 }}
@@ -182,7 +179,7 @@ const MINT2 = () => {
               <img
                 className={styles.clothes1}
                 alt=""
-                src="../clothes@2x.png"
+                src="https://iili.io/H0mwoI1.png"
                 onClick={() => {
                   setClothesSort("https://iili.io/HT56ldx.png");
                 }}
@@ -192,7 +189,7 @@ const MINT2 = () => {
               <img
                 className={styles.clothes1}
                 alt=""
-                src="../clothes@2x.png"
+                src="https://iili.io/H0mwq7V.png"
                 onClick={() => {
                   setClothesSort("https://iili.io/HT5605Q.png");
                 }}
@@ -202,7 +199,7 @@ const MINT2 = () => {
               <img
                 className={styles.clothes1}
                 alt=""
-                src="../clothes@2x.png"
+                src="https://iili.io/H0mwBkB.png"
                 onClick={() => {
                   setClothesSort("https://iili.io/HT561eV.png");
                 }}
@@ -238,7 +235,7 @@ const MINT2 = () => {
               <img
                 className={styles.eyebrows1}
                 alt=""
-                src="../Eyebrows_1@2x.png"
+                src="https://iili.io/H0mwJLu.png"
                 onClick={() => {
                   setEyebrowSort("https://iili.io/HT56AX9.png");
                 }}
@@ -248,7 +245,7 @@ const MINT2 = () => {
               <img
                 className={styles.eyebrows2}
                 alt=""
-                src="../Eyebrows_1@2x.png"
+                src="https://iili.io/H0mwFrx.png"
                 onClick={() => {
                   setEyebrowSort("https://iili.io/HT56Rse.png");
                 }}
@@ -258,7 +255,7 @@ const MINT2 = () => {
               <img
                 className={styles.eyebrows3}
                 alt=""
-                src="../Eyebrows_1@2x.png"
+                src="https://iili.io/H0mw31j.png"
                 onClick={() => {
                   setEyebrowSort("https://iili.io/HT56Y0b.png");
                 }}
@@ -280,7 +277,6 @@ const MINT2 = () => {
           onClick={() => eyeBrowsSwiperRef.current?.slidePrev()}
         />
       </div>
-
       <div className={styles.eyes} id="Eyes">
         <div className={styles.eyesChild} />
 
@@ -307,7 +303,7 @@ const MINT2 = () => {
               <img
                 className={styles.eyes1}
                 alt=""
-                src="../eyes_1@2x.png"
+                src="https://iili.io/H0mjYxe.png"
                 onClick={() => {
                   setEyesSort("https://iili.io/HT56oJ4.png");
                 }}
@@ -317,7 +313,7 @@ const MINT2 = () => {
               <img
                 className={styles.eyes1}
                 alt=""
-                src="../eyes_1@2x.png"
+                src="https://iili.io/H0mj5b9.png"
                 onClick={() => {
                   setEyesSort("https://iili.io/HT56ze2.png");
                 }}
@@ -327,7 +323,7 @@ const MINT2 = () => {
               <img
                 className={styles.eyes1}
                 alt=""
-                src="../eyes_1@2x.png"
+                src="https://iili.io/H0mjRO7.png"
                 onClick={() => {
                   setEyesSort("https://iili.io/HT56IbS.png");
                 }}
@@ -337,7 +333,7 @@ const MINT2 = () => {
               <img
                 className={styles.eyes1}
                 alt=""
-                src="../eyes_1@2x.png"
+                src="https://iili.io/H0mjARS.png"
                 onClick={() => {
                   setEyesSort("https://iili.io/HT56uz7.png");
                 }}
@@ -359,7 +355,6 @@ const MINT2 = () => {
           onClick={() => eyesSwiperRef.current?.slideNext()}
         />
       </div>
-
       <div className={styles.skin} id="Skin">
         <div className={styles.skinChild} />
 
@@ -395,7 +390,6 @@ const MINT2 = () => {
           }}
         />
       </div>
-
       <div className={styles.backgroundcolor} id="BackgroundColor">
         <div className={styles.backgroundcolorChild} />
         <img
@@ -455,7 +449,6 @@ const MINT2 = () => {
           alt="clothes"
         />
       </div>
-
       <div className={styles.preview} id="preview">
         <img
           className={styles.nametagwt1Icon}

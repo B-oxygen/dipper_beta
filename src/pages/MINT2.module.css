@@ -139,8 +139,8 @@
 }
 
 .eyes1 {
-  top: -30%;
-  left: 2%;
+  top: -20%;
+  left: 0%;
   width: 100%;
   object-fit: cover;
   position: absolute;
@@ -194,7 +194,7 @@
 .eyebrows2,
 .eyebrows3 {
   top: -15%;
-  left: 3%;
+  left: 2%;
   width: 100%;
   object-fit: cover;
   position: absolute;
@@ -481,9 +481,8 @@
 .hair2,
 .hair3,
 .hair4 {
-  top: 10%;
-  left: 8%;
-  width: 90%;
+  top: 7%;
+  width: 100%;
   object-fit: cover;
   position: absolute;
   cursor: pointer;
