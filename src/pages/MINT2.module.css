@@ -517,10 +517,10 @@
 .eyebrowsSort {
   z-index: 4;
 }
-.hairSort {
-  z-index: 6;
-}
 .clothesSort {
+  z-index: 5;
+}
+.hairSort {
   z-index: 6;
 }
 
